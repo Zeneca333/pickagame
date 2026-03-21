@@ -6,6 +6,9 @@ import Landing from "@/components/Landing";
 import ScenarioSelect from "@/components/ScenarioSelect";
 import MoodSelect from "@/components/MoodSelect";
 import QuizStep from "@/components/QuizStep";
+import LoadingState from "@/components/LoadingState";
+import SwipeCards from "@/components/SwipeCards";
+import Results from "@/components/Results";
 
 export default function Home() {
   const [step, setStep] = useState<FlowStep>("landing");
@@ -17,6 +20,45 @@ export default function Home() {
   const [favorites, setFavorites] = useState("");
   const [recommendations, setRecommendations] = useState<RecommendedGame[]>([]);
   const [shelf, setShelf] = useState<RecommendedGame[]>([]);
+
+  useEffect(() => {
+    if (step !== "loading") return;
+    if (!scenario || !mood || !playerCount || !gameLength || !complexity) return;
+
+    const fetchRecommendations = async () => {
+      try {
+        const res = await fetch("/api/recommend", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            scenario, mood, playerCount, gameLength, complexity,
+            favorites: favorites || undefined,
+          }),
+        });
+        if (!res.ok) throw new Error("Failed to get recommendations");
+        const data = await res.json();
+        setRecommendations(data.games);
+        setStep("swipe");
+      } catch (error) {
+        console.error(error);
+        setStep("landing");
+      }
+    };
+
+    fetchRecommendations();
+  }, [step, scenario, mood, playerCount, gameLength, complexity, favorites]);
+
+  function handleRollAgain() {
+    setStep("landing");
+    setScenario(null);
+    setMood(null);
+    setPlayerCount(null);
+    setGameLength(null);
+    setComplexity(null);
+    setFavorites("");
+    setRecommendations([]);
+    setShelf([]);
+  }
 
   return (
     <main className="min-h-screen">
@@ -76,12 +118,11 @@ export default function Home() {
           onTextSubmit={(v) => { setFavorites(v); setStep("loading"); }}
         />
       )}
-      {/* Loading, Swipe, and Results steps will be added in Tasks 10-12 */}
-      {(step === "loading" || step === "swipe" || step === "results") && (
-        <div className="flex items-center justify-center min-h-screen">
-          <p className="font-mono text-gray-500">Step: {step} (coming soon)</p>
-        </div>
+      {step === "loading" && <LoadingState />}
+      {step === "swipe" && (
+        <SwipeCards games={recommendations} onComplete={(liked) => { setShelf(liked); setStep("results"); }} />
       )}
+      {step === "results" && <Results shelf={shelf} onRollAgain={handleRollAgain} />}
     </main>
   );
 }
