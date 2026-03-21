@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { ShelfData } from "@/lib/types";
 
 const spineColors = ["#10b981", "#6366f1", "#f59e0b", "#ef4444", "#8b5cf6"];
@@ -31,9 +32,9 @@ export default function ShelfPageClient({ data }: ShelfPageClientProps) {
         ))}
       </div>
       <div className="w-72 h-1 bg-white/15 mx-auto rounded mb-8" />
-      <a href="/" className="px-6 py-3 bg-accent text-black font-mono font-bold text-sm rounded hover:brightness-110 transition-all">
+      <Link href="/" className="px-6 py-3 bg-accent text-black font-mono font-bold text-sm rounded hover:brightness-110 transition-all">
         ROLL YOUR OWN →
-      </a>
+      </Link>
       <p className="font-mono text-[10px] text-gray-600 mt-6">rollfor.fun</p>
     </div>
   );

@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { decodeShelfData } from "@/lib/share";
 import ShelfPageClient from "./client";
 
@@ -38,9 +39,9 @@ export default async function ShelfPage({ params }: PageProps) {
     return (
       <div className="flex flex-col items-center justify-center min-h-screen">
         <p className="font-mono text-gray-400">Invalid shelf link.</p>
-        <a href="/" className="mt-4 text-accent font-mono text-sm hover:underline">
+        <Link href="/" className="mt-4 text-accent font-mono text-sm hover:underline">
           Roll your own →
-        </a>
+        </Link>
       </div>
     );
   }
