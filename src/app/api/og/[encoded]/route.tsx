@@ -89,9 +89,10 @@ export async function GET(
           <span style={{ fontSize: 12, letterSpacing: 4, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
         </div>
 
-        {/* Games row — no flex:1 so cards don't stretch */}
+        {/* Games row */}
         <div style={{
           display: "flex",
+          flex: 1,
           padding: "14px 48px 0",
           gap: 14,
         }}>
@@ -106,6 +107,7 @@ export async function GET(
                 display: "flex",
                 flexDirection: "column",
                 width: 204,
+                flex: 1,
                 backgroundColor: "white",
                 border: i === 0 ? "2px solid rgba(232, 93, 58, 0.3)" : "2px solid rgba(45, 42, 38, 0.08)",
                 borderRadius: 14,
@@ -117,13 +119,13 @@ export async function GET(
                     <img
                       src={game.thumbnail}
                       width={204}
-                      height={170}
+                      height={240}
                       style={{ objectFit: "cover" }}
                     />
                   ) : (
                     <div style={{
                       width: 204,
-                      height: 170,
+                      height: 240,
                       backgroundColor: "#f0ede8",
                       display: "flex",
                       alignItems: "center",
@@ -156,15 +158,16 @@ export async function GET(
                 <div style={{
                   display: "flex",
                   flexDirection: "column",
-                  padding: "10px 12px 12px",
+                  padding: "12px 14px 14px",
+                  flex: 1,
                 }}>
                   {/* Name */}
                   <span style={{
-                    fontSize: 13,
+                    fontSize: 14,
                     fontWeight: 700,
                     color: "#2d2a26",
                     lineHeight: 1.25,
-                    marginBottom: 6,
+                    marginBottom: 8,
                   }}>
                     {game.name}
                   </span>
@@ -175,22 +178,22 @@ export async function GET(
                       display: "flex",
                       flexWrap: "wrap",
                       gap: 5,
-                      marginBottom: 8,
+                      marginBottom: 10,
                     }}>
                       {stats.map((s) => (
                         <StatPill key={s.text} text={s.text} accent={s.accent} />
                       ))}
                     </div>
                   ) : (
-                    <div style={{ display: "flex", marginBottom: 8 }} />
+                    <div style={{ display: "flex", marginBottom: 10 }} />
                   )}
 
                   {/* Pitch */}
                   <span style={{
-                    fontSize: 10,
+                    fontSize: 11,
                     color: "#8a857d",
                     fontStyle: "italic",
-                    lineHeight: 1.4,
+                    lineHeight: 1.45,
                   }}>
                     {game.pitch}
                   </span>
@@ -200,13 +203,11 @@ export async function GET(
           })}
         </div>
 
-        {/* Footer — just yoshizen branding, no duplicate URL */}
+        {/* Footer */}
         <div style={{
           display: "flex",
-          flex: 1,
-          alignItems: "flex-end",
           justifyContent: "flex-end",
-          padding: "0 48px 18px",
+          padding: "8px 48px 14px",
         }}>
           <span style={{ fontSize: 12, color: "#8a857d" }}>
             built by yoshizen.co
