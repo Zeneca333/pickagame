@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { decodeShelfData } from "@/lib/share";
 import { readFile } from "fs/promises";
 import { join } from "path";
-import type { Scenario, Mood, GameLength, Complexity, Discovery, PlayerCount } from "@/lib/types";
+import type { Scenario, Mood, GameLength, Complexity, PlayerCount } from "@/lib/types";
 
 export const runtime = "nodejs";
 
@@ -22,43 +22,66 @@ function StatPill({ text, accent }: { text: string; accent?: boolean }) {
   );
 }
 
-const SCENARIO_LABELS: Record<Scenario, string> = {
-  "family-night": "family game night",
-  "date-night": "date night",
-  "friends-chaos": "chaotic friend hangout",
-  "hardcore-crew": "serious gaming session",
-  "solo-quest": "solo adventure",
-  "kids-in-mix": "playing with kids",
+// Scenario × Mood taglines — fun, shareable one-liners
+const TAGLINES: Partial<Record<Scenario, Partial<Record<Mood, string>>>> = {
+  "family-night": {
+    competitive: "The family wanted bonding. I chose psychological warfare.",
+    cozy: "Wholesome family vibes only — no table flips tonight.",
+    chaotic: "Family game night where the rules are made up and the points don't matter.",
+    brainy: "Teaching the family that board games are just math in disguise.",
+    social: "Family bonding: now with 60% less screen time.",
+    chill: "A chill family night — no one's sleeping on the couch after this one.",
+  },
+  "date-night": {
+    competitive: "Nothing says romance like absolutely destroying your partner.",
+    cozy: "Cozy date night picks — candlelight and cardboard.",
+    chaotic: "Our love language is chaos. These games prove it.",
+    brainy: "Big brain date night — falling in love over strategy.",
+    social: "Date night games that are more fun than \"so, how was your day?\"",
+    chill: "Chill date night — wine, snacks, and zero arguments about rules.",
+  },
+  "friends-chaos": {
+    competitive: "Friendships will be tested. Alliances will be broken.",
+    cozy: "Cozy hang with friends — save the betrayal for next week.",
+    chaotic: "Maximum chaos. Minimum regret. Perfect friend energy.",
+    brainy: "We came to think. We stayed to overthink.",
+    social: "These games are just an excuse to yell at each other.",
+    chill: "Vibes only. No tryhard energy allowed tonight.",
+  },
+  "hardcore-crew": {
+    competitive: "Serious gamers only. Leave your feelings at the door.",
+    cozy: "Hardcore gamers having a surprisingly cozy evening.",
+    chaotic: "Heavy games, heavier trash talk.",
+    brainy: "Galaxy brain mode: engaged. Snack supply: critical.",
+    social: "Hardcore gaming, but make it a party.",
+    chill: "Even sweaty gamers need a chill night sometimes.",
+  },
+  "solo-quest": {
+    competitive: "Solo gaming: the only person who can betray me is me.",
+    cozy: "Just me, myself, and a cozy cardboard adventure.",
+    chaotic: "Solo chaos — I am both the problem and the solution.",
+    brainy: "Solo brain workout. No witnesses to my AP.",
+    social: "Playing solo but posting it so it counts as social.",
+    chill: "Solo chill session — introvert battery recharging.",
+  },
+  "kids-in-mix": {
+    competitive: "Teaching kids that losing builds character (they're not buying it).",
+    cozy: "Games the whole family can enjoy — tantrums not included.",
+    chaotic: "Kids + board games = beautiful controlled chaos.",
+    brainy: "Sneaking education into game night — don't tell the kids.",
+    social: "Games where the kids actually talk to us instead of screens.",
+    chill: "Easy games for when the kids are running the show.",
+  },
 };
 
-const MOOD_LABELS: Record<Mood, string> = {
-  competitive: "competitive",
-  cozy: "cozy",
-  chaotic: "chaotic",
-  brainy: "brainy",
-  social: "social",
-  chill: "chill",
-};
-
-const LENGTH_LABELS: Record<GameLength, string> = {
-  "under-30": "quick games",
-  "30-60": "30\u201360 min sessions",
-  "60-120": "1\u20132 hour commitments",
-  marathon: "marathon sessions",
-};
-
-const COMPLEXITY_LABELS: Record<Complexity, string> = {
-  easy: "easy to pick up",
-  "some-strategy": "some strategy",
-  "brain-burner": "full brain-burners",
-};
-
-const PLAYER_LABELS: Record<PlayerCount, string> = {
-  "1": "1 player",
-  "2": "2 players",
-  "3-4": "3\u20134 players",
-  "5+": "5+ players",
-  any: "any player count",
+// Fallback taglines per scenario (when mood isn't available)
+const SCENARIO_FALLBACKS: Record<Scenario, string> = {
+  "family-night": "Family game night — may the best relative win.",
+  "date-night": "Date night picks — cardboard > Netflix.",
+  "friends-chaos": "Friend hangout games — friendships may vary after.",
+  "hardcore-crew": "Serious picks for serious gamers.",
+  "solo-quest": "Solo picks — just me and my meeples.",
+  "kids-in-mix": "Kid-friendly picks that adults won't hate.",
 };
 
 function buildSummary(data: {
@@ -68,17 +91,18 @@ function buildSummary(data: {
   complexity?: Complexity;
   inputPlayerCount?: PlayerCount;
 }): string {
-  const parts: string[] = [];
+  // Try scenario+mood combo first
+  if (data.scenario && data.mood) {
+    const line = TAGLINES[data.scenario]?.[data.mood];
+    if (line) return line;
+  }
 
-  if (data.scenario) parts.push(`Picked for a ${SCENARIO_LABELS[data.scenario]}`);
-  if (data.mood) parts.push(`${MOOD_LABELS[data.mood]} vibes`);
-  if (data.inputPlayerCount) parts.push(PLAYER_LABELS[data.inputPlayerCount]);
-  if (data.gameLength) parts.push(LENGTH_LABELS[data.gameLength]);
-  if (data.complexity) parts.push(COMPLEXITY_LABELS[data.complexity]);
+  // Fall back to scenario-only
+  if (data.scenario) {
+    return SCENARIO_FALLBACKS[data.scenario];
+  }
 
-  if (parts.length === 0) return "5 games picked just for you — find yours at pickagame.fun";
-
-  return parts.join(" · ");
+  return "The dice chose these. Who are we to argue? — pickagame.fun";
 }
 
 export async function GET(
