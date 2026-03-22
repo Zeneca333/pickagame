@@ -162,7 +162,16 @@ export default function Home() {
       )}
       {step === "results" && (
         <div className="animate-fade-in" key="results">
-          <Results games={recommendations} onRollAgain={handleRollAgain} />
+          <Results
+            games={recommendations}
+            onRollAgain={handleRollAgain}
+            scenario={scenario!}
+            mood={mood!}
+            playerCount={playerCount!}
+            gameLength={gameLength!}
+            complexity={complexity!}
+            discovery={discovery!}
+          />
         </div>
       )}
     </main>

@@ -69,6 +69,12 @@ export interface ShelfData {
     playtime?: string;
     weight?: number;
   }>;
+  scenario?: Scenario;
+  mood?: Mood;
+  gameLength?: GameLength;
+  complexity?: Complexity;
+  discovery?: Discovery;
+  inputPlayerCount?: PlayerCount;
 }
 
 export type FlowStep =

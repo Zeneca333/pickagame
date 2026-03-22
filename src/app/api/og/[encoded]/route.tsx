@@ -2,6 +2,7 @@ import { ImageResponse } from "next/og";
 import { decodeShelfData } from "@/lib/share";
 import { readFile } from "fs/promises";
 import { join } from "path";
+import type { Scenario, Mood, GameLength, Complexity, Discovery, PlayerCount } from "@/lib/types";
 
 export const runtime = "nodejs";
 
@@ -19,6 +20,65 @@ function StatPill({ text, accent }: { text: string; accent?: boolean }) {
       {text}
     </span>
   );
+}
+
+const SCENARIO_LABELS: Record<Scenario, string> = {
+  "family-night": "family game night",
+  "date-night": "date night",
+  "friends-chaos": "chaotic friend hangout",
+  "hardcore-crew": "serious gaming session",
+  "solo-quest": "solo adventure",
+  "kids-in-mix": "playing with kids",
+};
+
+const MOOD_LABELS: Record<Mood, string> = {
+  competitive: "competitive",
+  cozy: "cozy",
+  chaotic: "chaotic",
+  brainy: "brainy",
+  social: "social",
+  chill: "chill",
+};
+
+const LENGTH_LABELS: Record<GameLength, string> = {
+  "under-30": "quick games",
+  "30-60": "30\u201360 min sessions",
+  "60-120": "1\u20132 hour commitments",
+  marathon: "marathon sessions",
+};
+
+const COMPLEXITY_LABELS: Record<Complexity, string> = {
+  easy: "easy to pick up",
+  "some-strategy": "some strategy",
+  "brain-burner": "full brain-burners",
+};
+
+const PLAYER_LABELS: Record<PlayerCount, string> = {
+  "1": "1 player",
+  "2": "2 players",
+  "3-4": "3\u20134 players",
+  "5+": "5+ players",
+  any: "any player count",
+};
+
+function buildSummary(data: {
+  scenario?: Scenario;
+  mood?: Mood;
+  gameLength?: GameLength;
+  complexity?: Complexity;
+  inputPlayerCount?: PlayerCount;
+}): string {
+  const parts: string[] = [];
+
+  if (data.scenario) parts.push(`Picked for a ${SCENARIO_LABELS[data.scenario]}`);
+  if (data.mood) parts.push(`${MOOD_LABELS[data.mood]} vibes`);
+  if (data.inputPlayerCount) parts.push(PLAYER_LABELS[data.inputPlayerCount]);
+  if (data.gameLength) parts.push(LENGTH_LABELS[data.gameLength]);
+  if (data.complexity) parts.push(COMPLEXITY_LABELS[data.complexity]);
+
+  if (parts.length === 0) return "5 games picked just for you — find yours at pickagame.fun";
+
+  return parts.join(" · ");
 }
 
 export async function GET(
@@ -40,6 +100,7 @@ export async function GET(
   );
 
   const games = data.games.slice(0, 5);
+  const summary = buildSummary(data);
 
   return new ImageResponse(
     (
@@ -64,7 +125,7 @@ export async function GET(
           padding: "18px 48px 0",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            {/* Dice icon — 5-dot pattern matching favicon */}
+            {/* Dice icon — 5-dot pattern */}
             <div style={{
               width: 36,
               height: 36,
@@ -73,15 +134,10 @@ export async function GET(
               display: "flex",
               position: "relative",
             }}>
-              {/* Top-left dot */}
               <div style={{ position: "absolute", top: 6, left: 6, width: 7, height: 7, backgroundColor: "white", borderRadius: 7, display: "flex" }} />
-              {/* Top-right dot */}
               <div style={{ position: "absolute", top: 6, right: 6, width: 7, height: 7, backgroundColor: "white", borderRadius: 7, display: "flex" }} />
-              {/* Center dot */}
               <div style={{ position: "absolute", top: 14, left: 14, width: 7, height: 7, backgroundColor: "white", borderRadius: 7, display: "flex" }} />
-              {/* Bottom-left dot */}
               <div style={{ position: "absolute", bottom: 6, left: 6, width: 7, height: 7, backgroundColor: "white", borderRadius: 7, display: "flex" }} />
-              {/* Bottom-right dot */}
               <div style={{ position: "absolute", bottom: 6, right: 6, width: 7, height: 7, backgroundColor: "white", borderRadius: 7, display: "flex" }} />
             </div>
             <span style={{ fontSize: 22, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</span>
@@ -89,10 +145,9 @@ export async function GET(
           <span style={{ fontSize: 12, letterSpacing: 4, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
         </div>
 
-        {/* Games row */}
+        {/* Games row — compact, no stretch */}
         <div style={{
           display: "flex",
-          flex: 1,
           padding: "14px 48px 0",
           gap: 14,
         }}>
@@ -107,7 +162,6 @@ export async function GET(
                 display: "flex",
                 flexDirection: "column",
                 width: 204,
-                flex: 1,
                 backgroundColor: "white",
                 border: i === 0 ? "2px solid rgba(232, 93, 58, 0.3)" : "2px solid rgba(45, 42, 38, 0.08)",
                 borderRadius: 14,
@@ -119,13 +173,13 @@ export async function GET(
                     <img
                       src={game.thumbnail}
                       width={204}
-                      height={240}
+                      height={170}
                       style={{ objectFit: "cover" }}
                     />
                   ) : (
                     <div style={{
                       width: 204,
-                      height: 240,
+                      height: 170,
                       backgroundColor: "#f0ede8",
                       display: "flex",
                       alignItems: "center",
@@ -134,7 +188,6 @@ export async function GET(
                       <span style={{ fontSize: 40, color: "#ccc" }}>?</span>
                     </div>
                   )}
-                  {/* Rank badge */}
                   <div style={{
                     position: "absolute",
                     top: 8,
@@ -154,46 +207,42 @@ export async function GET(
                   </div>
                 </div>
 
-                {/* Info section */}
+                {/* Info */}
                 <div style={{
                   display: "flex",
                   flexDirection: "column",
-                  padding: "12px 14px 14px",
-                  flex: 1,
+                  padding: "10px 12px 12px",
                 }}>
-                  {/* Name */}
                   <span style={{
-                    fontSize: 14,
+                    fontSize: 13,
                     fontWeight: 700,
                     color: "#2d2a26",
                     lineHeight: 1.25,
-                    marginBottom: 8,
+                    marginBottom: 6,
                   }}>
                     {game.name}
                   </span>
 
-                  {/* Stats row — always render, with pre-built array */}
                   {stats.length > 0 ? (
                     <div style={{
                       display: "flex",
                       flexWrap: "wrap",
                       gap: 5,
-                      marginBottom: 10,
+                      marginBottom: 8,
                     }}>
                       {stats.map((s) => (
                         <StatPill key={s.text} text={s.text} accent={s.accent} />
                       ))}
                     </div>
                   ) : (
-                    <div style={{ display: "flex", marginBottom: 10 }} />
+                    <div style={{ display: "flex", marginBottom: 8 }} />
                   )}
 
-                  {/* Pitch */}
                   <span style={{
-                    fontSize: 11,
+                    fontSize: 10,
                     color: "#8a857d",
                     fontStyle: "italic",
-                    lineHeight: 1.45,
+                    lineHeight: 1.4,
                   }}>
                     {game.pitch}
                   </span>
@@ -203,11 +252,39 @@ export async function GET(
           })}
         </div>
 
+        {/* Summary banner — fills remaining space */}
+        <div style={{
+          display: "flex",
+          flex: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          padding: "0 48px",
+        }}>
+          <div style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            backgroundColor: "rgba(232, 93, 58, 0.06)",
+            borderRadius: 12,
+            padding: "14px 32px",
+            width: "100%",
+          }}>
+            <span style={{
+              fontSize: 14,
+              color: "#6b6660",
+              textAlign: "center",
+              lineHeight: 1.5,
+            }}>
+              {summary}
+            </span>
+          </div>
+        </div>
+
         {/* Footer */}
         <div style={{
           display: "flex",
           justifyContent: "flex-end",
-          padding: "8px 48px 14px",
+          padding: "0 48px 14px",
         }}>
           <span style={{ fontSize: 12, color: "#8a857d" }}>
             built by yoshizen.co

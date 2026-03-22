@@ -1,20 +1,26 @@
 "use client";
 
 import { useMemo } from "react";
-import type { RecommendedGame } from "@/lib/types";
+import type { RecommendedGame, Scenario, Mood, PlayerCount, GameLength, Complexity, Discovery } from "@/lib/types";
 import { encodeShelfData } from "@/lib/share";
 import ShareButtons from "./ShareButtons";
 
 interface ResultsProps {
   games: RecommendedGame[];
   onRollAgain: () => void;
+  scenario?: Scenario;
+  mood?: Mood;
+  playerCount?: PlayerCount;
+  gameLength?: GameLength;
+  complexity?: Complexity;
+  discovery?: Discovery;
 }
 
 function bggUrl(bggId: number) {
   return `https://boardgamegeek.com/boardgame/${bggId}`;
 }
 
-export default function Results({ games, onRollAgain }: ResultsProps) {
+export default function Results({ games, onRollAgain, scenario, mood, playerCount, gameLength, complexity, discovery }: ResultsProps) {
   const topPick = games[0];
   const runners = games.slice(1);
 
@@ -29,8 +35,14 @@ export default function Results({ games, onRollAgain }: ResultsProps) {
         playtime: g.playtime || undefined,
         weight: g.weight || undefined,
       })),
+      scenario,
+      mood,
+      gameLength,
+      complexity,
+      discovery,
+      inputPlayerCount: playerCount,
     });
-  }, [games]);
+  }, [games, scenario, mood, playerCount, gameLength, complexity, discovery]);
 
   const shareUrl = useMemo(() => {
     if (typeof window !== "undefined") {
