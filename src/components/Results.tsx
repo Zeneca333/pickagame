@@ -136,7 +136,17 @@ export default function Results({ games, onRollAgain }: ResultsProps) {
         ))}
       </div>
 
-      <p className="font-mono text-sm text-muted mb-8">pickagame.fun</p>
+      <p className="font-mono text-sm text-muted mb-4">pickagame.fun</p>
+      <p className="text-xs text-muted mb-8">
+        built by{" "}
+        <a href="https://yoshizen.co" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">
+          Yoshizen Co
+        </a>
+        {" "}·{" "}
+        <a href="https://twitter.com/yoshizenco" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+          @yoshizenco
+        </a>
+      </p>
 
       <ShareButtons shelfUrl={shareUrl} ogImageUrl={ogImageUrl} onRollAgain={onRollAgain} />
     </div>

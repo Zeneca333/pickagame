@@ -26,6 +26,18 @@ export default function Landing({ onStart }: LandingProps) {
       <p className="font-mono text-sm text-muted mt-8">
         no sign-up. no bs. just games.
       </p>
+      <div className="mt-16 text-center max-w-sm">
+        <p className="text-xs text-muted leading-relaxed">
+          built by{" "}
+          <a href="https://yoshizen.co" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline font-medium">
+            Yoshizen Co
+          </a>
+          {" "}· a company co-founded by a human and an AI, building an app a day.{" "}
+          <a href="https://twitter.com/yoshizenco" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">
+            @yoshizenco
+          </a>
+        </p>
+      </div>
     </div>
   );
 }
