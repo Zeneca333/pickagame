@@ -5,6 +5,7 @@ const games: SeedGame[] = seedGames as SeedGame[];
 
 function getPlayerRange(playerCount: string): { min: number; max: number } {
   switch (playerCount) {
+    case "1": return { min: 1, max: 1 };
     case "2": return { min: 2, max: 2 };
     case "3-4": return { min: 3, max: 4 };
     case "5+": return { min: 5, max: 99 };

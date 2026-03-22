@@ -62,6 +62,9 @@ export default function Home() {
     setRecommendations([]);
   }
 
+  const skipsPlayerCount = scenario === "solo-quest" || scenario === "date-night";
+  const totalSteps = skipsPlayerCount ? 5 : 6;
+
   return (
     <main className="min-h-screen">
       {step === "landing" && (
@@ -76,13 +79,24 @@ export default function Home() {
       )}
       {step === "mood" && (
         <div className="animate-fade-in" key="mood">
-          <MoodSelect onSelect={(m) => { setMood(m); setStep("quiz-playercount"); }} onBack={() => setStep("scenario")} />
+          <MoodSelect onSelect={(m) => {
+            setMood(m);
+            if (scenario === "solo-quest") {
+              setPlayerCount("1");
+              setStep("quiz-length");
+            } else if (scenario === "date-night") {
+              setPlayerCount("2");
+              setStep("quiz-length");
+            } else {
+              setStep("quiz-playercount");
+            }
+          }} onBack={() => setStep("scenario")} />
         </div>
       )}
       {step === "quiz-playercount" && (
         <div className="animate-fade-in" key="quiz-playercount">
           <QuizStep
-            stepNumber="STEP 3 OF 6"
+            stepNumber={`STEP 3 OF ${totalSteps}`}
             question="how many players?"
             options={[
               { value: "2", label: "Just 2 of us" },
@@ -98,7 +112,7 @@ export default function Home() {
       {step === "quiz-length" && (
         <div className="animate-fade-in" key="quiz-length">
           <QuizStep
-            stepNumber="STEP 4 OF 6"
+            stepNumber={`STEP ${skipsPlayerCount ? 3 : 4} OF ${totalSteps}`}
             question="how long you got?"
             options={[
               { value: "under-30", label: "Quick — under 30 min" },
@@ -107,14 +121,14 @@ export default function Home() {
               { value: "marathon", label: "Marathon — 2+ hours" },
             ]}
             onSelect={(v) => { setGameLength(v as GameLength); setStep("quiz-complexity"); }}
-            onBack={() => setStep("quiz-playercount")}
+            onBack={() => setStep(scenario === "solo-quest" || scenario === "date-night" ? "mood" : "quiz-playercount")}
           />
         </div>
       )}
       {step === "quiz-complexity" && (
         <div className="animate-fade-in" key="quiz-complexity">
           <QuizStep
-            stepNumber="STEP 5 OF 6"
+            stepNumber={`STEP ${skipsPlayerCount ? 4 : 5} OF ${totalSteps}`}
             question="how crunchy?"
             options={[
               { value: "easy", label: "Easy to learn, hard to put down" },
@@ -129,7 +143,7 @@ export default function Home() {
       {step === "quiz-discovery" && (
         <div className="animate-fade-in" key="quiz-discovery">
           <QuizStep
-            stepNumber="STEP 6 OF 6"
+            stepNumber={`STEP ${skipsPlayerCount ? 5 : 6} OF ${totalSteps}`}
             question="what kind of picks?"
             options={[
               { value: "popular", label: "The hits — crowd favorites" },
