@@ -28,7 +28,7 @@ describe("parseBggResponse", () => {
       bggId: 174430,
       name: "Gloomhaven",
       description: "A tactical combat game",
-      thumbnail: "https://example.com/gloomhaven_t.jpg",
+      thumbnail: "https://example.com/gloomhaven.jpg",
       minPlayers: 1,
       maxPlayers: 4,
       minPlaytime: 60,

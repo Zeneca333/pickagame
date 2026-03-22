@@ -5,9 +5,6 @@ import { join } from "path";
 
 export const runtime = "nodejs";
 
-const spineColors = ["#10b981", "#6366f1", "#f59e0b", "#ef4444", "#8b5cf6"];
-const spineHeights = [180, 160, 190, 150, 170];
-
 export async function GET(
   _req: Request,
   { params }: { params: Promise<{ encoded: string }> }
@@ -26,6 +23,9 @@ export async function GET(
     join(process.cwd(), "public/fonts/SpaceMono-Regular.ttf")
   );
 
+  const topPick = data.games[0];
+  const runners = data.games.slice(1);
+
   return new ImageResponse(
     (
       <div
@@ -36,33 +36,61 @@ export async function GET(
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          backgroundColor: "#0a0a0a",
+          backgroundColor: "#faf7f2",
           fontFamily: "SpaceMono",
+          padding: "40px",
         }}
       >
-        <p style={{ fontSize: 14, letterSpacing: 4, color: "#6b7280", marginBottom: 24 }}>
-          MY TOP {data.games.length}
+        <p style={{ fontSize: 12, letterSpacing: 4, color: "#8a857d", marginBottom: 20 }}>
+          MY LINEUP
         </p>
-        <div style={{ display: "flex", gap: 8, alignItems: "flex-end", height: 200, marginBottom: 24 }}>
-          {data.games.map((game, i) => (
+
+        {topPick && (
+          <div style={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            marginBottom: 24,
+            border: "2px solid rgba(232, 93, 58, 0.2)",
+            borderRadius: 16,
+            padding: "16px 32px",
+            backgroundColor: "#ffffff",
+          }}>
+            <p style={{ fontSize: 10, letterSpacing: 3, color: "#e85d3a", fontWeight: 700, marginBottom: 6 }}>
+              TOP MATCH
+            </p>
+            <p style={{ fontSize: 24, fontWeight: 700, color: "#2d2a26", marginBottom: 6 }}>
+              {topPick.name}
+            </p>
+            <p style={{ fontSize: 12, color: "#8a857d", fontStyle: "italic" }}>
+              &ldquo;{topPick.pitch}&rdquo;
+            </p>
+          </div>
+        )}
+
+        <div style={{ display: "flex", gap: 12, marginBottom: 24 }}>
+          {runners.map((game, i) => (
             <div key={game.bggId} style={{
-              width: 60, height: spineHeights[i % spineHeights.length],
-              backgroundColor: spineColors[i % spineColors.length],
-              borderRadius: 4, display: "flex", alignItems: "center", justifyContent: "center",
-              padding: "8px 4px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: "12px 16px",
+              border: "2px solid rgba(45, 42, 38, 0.08)",
+              borderRadius: 12,
+              minWidth: 100,
+              maxWidth: 120,
+              backgroundColor: "#ffffff",
             }}>
-              <p style={{
-                writingMode: "vertical-rl", fontSize: 11, fontWeight: 700,
-                color: [1, 3].includes(i % 5) ? "#fff" : "#000", textAlign: "center",
-              }}>
-                {game.name.toUpperCase()}
+              <p style={{ fontSize: 10, color: "#8a857d", marginBottom: 4 }}>#{i + 2}</p>
+              <p style={{ fontSize: 12, fontWeight: 700, color: "#2d2a26", textAlign: "center" }}>
+                {game.name}
               </p>
             </div>
           ))}
         </div>
-        <div style={{ width: 320, height: 4, backgroundColor: "rgba(255,255,255,0.15)", borderRadius: 2, marginBottom: 20 }} />
-        <p style={{ fontSize: 16, fontWeight: 700, color: "#10b981" }}>rollfor.fun</p>
-        <p style={{ fontSize: 12, color: "#6b7280", marginTop: 8 }}>Roll for your next obsession</p>
+
+        <p style={{ fontSize: 16, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</p>
+        <p style={{ fontSize: 12, color: "#8a857d", marginTop: 6 }}>Pick your next obsession</p>
       </div>
     ),
     {

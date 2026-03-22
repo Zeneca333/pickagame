@@ -9,6 +9,7 @@ describe("buildPrompt", () => {
     playerCount: "3-4",
     gameLength: "30-60",
     complexity: "some-strategy",
+    discovery: "popular",
     favorites: "Catan",
   };
 

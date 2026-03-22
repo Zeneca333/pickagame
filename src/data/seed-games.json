@@ -1,51 +1,4651 @@
 [
-  { "bggId": 174430, "name": "Gloomhaven", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 150, "weight": 3.86, "categories": ["Adventure", "Fantasy"], "mechanics": ["Cooperative", "Hand Management"] },
-  { "bggId": 167791, "name": "Terraforming Mars", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 120, "maxPlaytime": 120, "weight": 3.24, "categories": ["Sci-Fi", "Economic"], "mechanics": ["Drafting", "Tile Placement"] },
-  { "bggId": 233078, "name": "Wingspan", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 40, "maxPlaytime": 70, "weight": 2.44, "categories": ["Animals", "Card Game"], "mechanics": ["Engine Building", "Set Collection"] },
-  { "bggId": 316554, "name": "Dune: Imperium", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.01, "categories": ["Sci-Fi"], "mechanics": ["Deck Building", "Worker Placement"] },
-  { "bggId": 224517, "name": "Brass: Birmingham", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.91, "categories": ["Economic", "Industrial"], "mechanics": ["Network Building", "Hand Management"] },
-  { "bggId": 342942, "name": "Ark Nova", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 90, "maxPlaytime": 150, "weight": 3.71, "categories": ["Animals", "Economic"], "mechanics": ["Hand Management", "Set Collection"] },
-  { "bggId": 291457, "name": "Gloomhaven: Jaws of the Lion", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 120, "weight": 3.57, "categories": ["Adventure", "Fantasy"], "mechanics": ["Cooperative", "Hand Management"] },
-  { "bggId": 312484, "name": "Lost Ruins of Arnak", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 2.92, "categories": ["Adventure"], "mechanics": ["Deck Building", "Worker Placement"] },
-  { "bggId": 220308, "name": "Gaia Project", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 150, "weight": 4.37, "categories": ["Sci-Fi", "Strategy"], "mechanics": ["Network Building", "Variable Player Powers"] },
-  { "bggId": 187645, "name": "Star Wars: Rebellion", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 180, "maxPlaytime": 240, "weight": 3.73, "categories": ["Sci-Fi", "Wargame"], "mechanics": ["Area Control", "Hand Management"] },
-  { "bggId": 169786, "name": "Scythe", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 90, "maxPlaytime": 115, "weight": 3.40, "categories": ["Economic", "Strategy"], "mechanics": ["Area Control", "Engine Building"] },
-  { "bggId": 162886, "name": "Spirit Island", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 90, "maxPlaytime": 120, "weight": 4.05, "categories": ["Fantasy", "Strategy"], "mechanics": ["Cooperative", "Variable Player Powers"] },
-  { "bggId": 237182, "name": "Root", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 90, "weight": 3.71, "categories": ["Animals", "Wargame"], "mechanics": ["Area Control", "Variable Player Powers"] },
-  { "bggId": 205637, "name": "Arkham Horror: The Card Game", "minPlayers": 1, "maxPlayers": 2, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.48, "categories": ["Horror", "Card Game"], "mechanics": ["Cooperative", "Deck Building"] },
-  { "bggId": 28720, "name": "Brass: Lancashire", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.86, "categories": ["Economic", "Industrial"], "mechanics": ["Network Building", "Hand Management"] },
-  { "bggId": 161936, "name": "Pandemic Legacy: Season 1", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 60, "weight": 2.84, "categories": ["Medical"], "mechanics": ["Cooperative", "Set Collection"] },
-  { "bggId": 12333, "name": "Twilight Struggle", "minPlayers": 2, "maxPlayers": 2, "minPlaytime": 120, "maxPlaytime": 180, "weight": 3.58, "categories": ["Political", "Wargame"], "mechanics": ["Area Control", "Hand Management"] },
-  { "bggId": 31260, "name": "Agricola", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 30, "maxPlaytime": 150, "weight": 3.64, "categories": ["Economic", "Farming"], "mechanics": ["Worker Placement", "Hand Management"] },
-  { "bggId": 230802, "name": "Azul", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 45, "weight": 1.77, "categories": ["Abstract", "Puzzle"], "mechanics": ["Drafting", "Tile Placement"] },
-  { "bggId": 173346, "name": "7 Wonders Duel", "minPlayers": 2, "maxPlayers": 2, "minPlaytime": 30, "maxPlaytime": 30, "weight": 2.22, "categories": ["Ancient", "Card Game"], "mechanics": ["Drafting", "Set Collection"] },
-  { "bggId": 68448, "name": "7 Wonders", "minPlayers": 2, "maxPlayers": 7, "minPlaytime": 30, "maxPlaytime": 30, "weight": 2.33, "categories": ["Ancient", "Card Game"], "mechanics": ["Drafting", "Set Collection"] },
-  { "bggId": 36218, "name": "Dominion", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 30, "weight": 2.36, "categories": ["Card Game", "Medieval"], "mechanics": ["Deck Building", "Hand Management"] },
-  { "bggId": 13, "name": "Catan", "minPlayers": 3, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 2.32, "categories": ["Economic", "Negotiation"], "mechanics": ["Trading", "Dice Rolling"] },
-  { "bggId": 9209, "name": "Ticket to Ride", "minPlayers": 2, "maxPlayers": 5, "minPlaytime": 30, "maxPlaytime": 60, "weight": 1.83, "categories": ["Trains"], "mechanics": ["Set Collection", "Route Building"] },
-  { "bggId": 30549, "name": "Pandemic", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 45, "maxPlaytime": 45, "weight": 2.42, "categories": ["Medical"], "mechanics": ["Cooperative", "Set Collection"] },
-  { "bggId": 148228, "name": "Splendor", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 30, "weight": 1.78, "categories": ["Economic", "Renaissance"], "mechanics": ["Set Collection", "Engine Building"] },
-  { "bggId": 178900, "name": "Codenames", "minPlayers": 2, "maxPlayers": 8, "minPlaytime": 15, "maxPlaytime": 15, "weight": 1.31, "categories": ["Party", "Word Game"], "mechanics": ["Team-Based", "Deduction"] },
-  { "bggId": 2651, "name": "Power Grid", "minPlayers": 2, "maxPlayers": 6, "minPlaytime": 120, "maxPlaytime": 120, "weight": 3.28, "categories": ["Economic", "Industrial"], "mechanics": ["Auction", "Network Building"] },
-  { "bggId": 39463, "name": "Cosmic Encounter", "minPlayers": 3, "maxPlayers": 5, "minPlaytime": 60, "maxPlaytime": 120, "weight": 2.55, "categories": ["Sci-Fi", "Negotiation"], "mechanics": ["Negotiation", "Variable Player Powers"] },
-  { "bggId": 131357, "name": "Coup", "minPlayers": 2, "maxPlayers": 6, "minPlaytime": 15, "maxPlaytime": 15, "weight": 1.42, "categories": ["Bluffing", "Card Game"], "mechanics": ["Bluffing", "Deduction"] },
-  { "bggId": 209010, "name": "Mechs vs. Minions", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 90, "weight": 2.41, "categories": ["Adventure", "Fantasy"], "mechanics": ["Cooperative", "Programming"] },
-  { "bggId": 164928, "name": "Orléans", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 90, "maxPlaytime": 90, "weight": 3.07, "categories": ["Medieval", "Economic"], "mechanics": ["Bag Building", "Worker Placement"] },
-  { "bggId": 84876, "name": "The Castles of Burgundy", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 90, "weight": 3.00, "categories": ["Medieval", "Strategy"], "mechanics": ["Dice Rolling", "Tile Placement"] },
-  { "bggId": 170216, "name": "Blood Rage", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 90, "weight": 2.88, "categories": ["Fantasy", "Mythology"], "mechanics": ["Area Control", "Drafting"] },
-  { "bggId": 205059, "name": "Mansions of Madness", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 120, "maxPlaytime": 180, "weight": 2.67, "categories": ["Horror", "Adventure"], "mechanics": ["Cooperative", "Dice Rolling"] },
-  { "bggId": 521, "name": "Crokinole", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 30, "maxPlaytime": 30, "weight": 1.27, "categories": ["Dexterity"], "mechanics": ["Flicking"] },
-  { "bggId": 199792, "name": "Everdell", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 40, "maxPlaytime": 80, "weight": 2.81, "categories": ["Animals", "Fantasy"], "mechanics": ["Worker Placement", "Engine Building"] },
-  { "bggId": 256960, "name": "Patchwork", "minPlayers": 2, "maxPlayers": 2, "minPlaytime": 15, "maxPlaytime": 30, "weight": 1.61, "categories": ["Abstract", "Puzzle"], "mechanics": ["Tile Placement", "Drafting"] },
-  { "bggId": 70323, "name": "King of Tokyo", "minPlayers": 2, "maxPlayers": 6, "minPlaytime": 30, "maxPlaytime": 30, "weight": 1.49, "categories": ["Fantasy", "Fighting"], "mechanics": ["Dice Rolling", "Press Your Luck"] },
-  { "bggId": 150376, "name": "Dead of Winter", "minPlayers": 2, "maxPlayers": 5, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.04, "categories": ["Horror", "Zombie"], "mechanics": ["Cooperative", "Traitor", "Dice Rolling"] },
-  { "bggId": 124361, "name": "Concordia", "minPlayers": 2, "maxPlayers": 5, "minPlaytime": 90, "maxPlaytime": 120, "weight": 3.04, "categories": ["Ancient", "Economic"], "mechanics": ["Hand Management", "Deck Building"] },
-  { "bggId": 193738, "name": "Great Western Trail", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 75, "maxPlaytime": 150, "weight": 3.69, "categories": ["American West", "Economic"], "mechanics": ["Deck Building", "Hand Management"] },
-  { "bggId": 215, "name": "Tichu", "minPlayers": 4, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 60, "weight": 2.30, "categories": ["Card Game"], "mechanics": ["Trick-Taking", "Team-Based"] },
-  { "bggId": 171623, "name": "The Voyages of Marco Polo", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 40, "maxPlaytime": 100, "weight": 3.20, "categories": ["Medieval", "Travel"], "mechanics": ["Worker Placement", "Dice Rolling"] },
-  { "bggId": 192135, "name": "Too Many Bones", "minPlayers": 1, "maxPlayers": 4, "minPlaytime": 60, "maxPlaytime": 120, "weight": 3.66, "categories": ["Adventure", "Fantasy"], "mechanics": ["Cooperative", "Dice Rolling"] },
-  { "bggId": 175914, "name": "Food Chain Magnate", "minPlayers": 2, "maxPlayers": 5, "minPlaytime": 120, "maxPlaytime": 240, "weight": 4.21, "categories": ["Economic", "Industrial"], "mechanics": ["Hand Management", "Network Building"] },
-  { "bggId": 266524, "name": "PARKS", "minPlayers": 1, "maxPlayers": 5, "minPlaytime": 30, "maxPlaytime": 60, "weight": 2.16, "categories": ["Nature", "Travel"], "mechanics": ["Set Collection", "Worker Placement"] },
-  { "bggId": 285967, "name": "Unmatched", "minPlayers": 2, "maxPlayers": 4, "minPlaytime": 20, "maxPlaytime": 40, "weight": 1.90, "categories": ["Fantasy", "Fighting"], "mechanics": ["Hand Management", "Variable Player Powers"] },
-  { "bggId": 182028, "name": "Captain Sonar", "minPlayers": 2, "maxPlayers": 8, "minPlaytime": 45, "maxPlaytime": 60, "weight": 2.09, "categories": ["Nautical"], "mechanics": ["Team-Based", "Real-Time"] }
+  {
+    "bggId": 174430,
+    "name": "Gloomhaven",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 150,
+    "weight": 3.86,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/sZYp_3BTDGjh2unaZfZmuA__large/img/SjAJC6-7tqR4SiJdzFKVv5S19xA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2437871.jpg"
+  },
+  {
+    "bggId": 167791,
+    "name": "Terraforming Mars",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 120,
+    "maxPlaytime": 120,
+    "weight": 3.24,
+    "categories": [
+      "Sci-Fi",
+      "Economic"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/mKTW70r0zUW0HF3YdUp7mA__large/img/8GRimNufmvPNpbz7WAzS1pLpWww=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3481967.jpg"
+  },
+  {
+    "bggId": 266192,
+    "name": "Wingspan",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 40,
+    "maxPlaytime": 70,
+    "weight": 2.44,
+    "categories": [
+      "Animals",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Engine Building",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/hWCaRVCf1wbD0WzrUYGmog__large/img/cURfR5wflQxK5UPfG8gnz1Okcak=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7947587.jpg"
+  },
+  {
+    "bggId": 316554,
+    "name": "Dune: Imperium",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.01,
+    "categories": [
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Worker Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/PhjygpWSo-0labGrPBMyyg__large/img/oUz6rlCE8xJJiwryzpvATc0gPYU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5666597.jpg"
+  },
+  {
+    "bggId": 224517,
+    "name": "Brass: Birmingham",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.91,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Network Building",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/SmhmTtnhPb_UvQAx8ABn-g__large/img/4TTg8X8_vP1jh-oIgzWl6F8uJzg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8184757.jpg"
+  },
+  {
+    "bggId": 342942,
+    "name": "Ark Nova",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 150,
+    "weight": 3.71,
+    "categories": [
+      "Animals",
+      "Economic"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/SoU8p28Sk1s8MSvoM4N8pQ__large/img/Efyh1CAH6bL8UebjTCQG8Cv7eO4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6293412.jpg"
+  },
+  {
+    "bggId": 291457,
+    "name": "Gloomhaven: Jaws of the Lion",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 120,
+    "weight": 3.57,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Swh9Xfx2nfpCVQKFiACHZQ__large/img/PMEhixjsZDDw9tJuHrKhmgPPJiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6313660.jpg"
+  },
+  {
+    "bggId": 312484,
+    "name": "Lost Ruins of Arnak",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 2.92,
+    "categories": [
+      "Adventure"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Worker Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/6o8UBW0WoX3V1m-brJe8pQ__large/img/Xz4A336UnSA6sVcTcjhCFp7A6zo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7035333.jpg"
+  },
+  {
+    "bggId": 220308,
+    "name": "Gaia Project",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 150,
+    "weight": 4.37,
+    "categories": [
+      "Sci-Fi",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Network Building",
+      "Variable Player Powers"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/jsXjRuFe2OhBlHTx0YtwKw__large/img/44FDKwJ8iD8jFzeBgJXli-DneR4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3763556.jpg"
+  },
+  {
+    "bggId": 187645,
+    "name": "Star Wars: Rebellion",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 180,
+    "maxPlaytime": 240,
+    "weight": 3.73,
+    "categories": [
+      "Sci-Fi",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BlfUf6yCEDOo9NUnNqpY8Q__large/img/FYiWP7Uvr4DdEkKxsNZ_9--Hank=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2737530.png"
+  },
+  {
+    "bggId": 169786,
+    "name": "Scythe",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 90,
+    "maxPlaytime": 115,
+    "weight": 3.4,
+    "categories": [
+      "Economic",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Engine Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Vf_rW03DVukbkbiCsz69VA__large/img/IO1wR5wZstXf7tZUWcsGBdly5Rc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2323719.jpg"
+  },
+  {
+    "bggId": 162886,
+    "name": "Spirit Island",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 4.05,
+    "categories": [
+      "Fantasy",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/6uuS7bwBzo5ysJBDJOSttQ__large/img/6KDG-CfRMnylsGvpa8ZALIj55gQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5754194.jpg"
+  },
+  {
+    "bggId": 237182,
+    "name": "Root",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 3.71,
+    "categories": [
+      "Animals",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/LdKT6D5eFbxRPP756ogt4w__large/img/SZgzeJvdGCv46PJtUpIyx472ddA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3799727.jpg"
+  },
+  {
+    "bggId": 205637,
+    "name": "Arkham Horror: The Card Game",
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.48,
+    "categories": [
+      "Horror",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Deck Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/B5F5ulz0UivNgrI9Ky0euA__large/img/yiOKqtP-wNIDhqqTCZZ7n43Vbj0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3122349.jpg"
+  },
+  {
+    "bggId": 28720,
+    "name": "Brass: Lancashire",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.86,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Network Building",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/PEYo2csXGM3-US1BGspJ4g__large/img/qfzJZb72Iz0ohCOtDLXf4GumsZw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic261878.jpg"
+  },
+  {
+    "bggId": 161936,
+    "name": "Pandemic Legacy: Season 1",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.84,
+    "categories": [
+      "Medical"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Xj5dN5eFbxRPP756ogt4MA__large/img/y8mZ0kn7mY0wrLv3JL7qSG8pPV4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2452830.png"
+  },
+  {
+    "bggId": 12333,
+    "name": "Twilight Struggle",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 120,
+    "maxPlaytime": 180,
+    "weight": 3.58,
+    "categories": [
+      "Political",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/WbwLiS4lfMHxcDg9mGg02Q__large/img/cs0gY7evrl0Z8HxE_ttjhfJJCfw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic361592.jpg"
+  },
+  {
+    "bggId": 31260,
+    "name": "Agricola",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 150,
+    "weight": 3.64,
+    "categories": [
+      "Economic",
+      "Farming"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BMgFONZBoqbGciDI8aHN7A__large/img/WqySi5LZtpcwlis6S8qf25WXoFQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic880518.jpg"
+  },
+  {
+    "bggId": 230802,
+    "name": "Azul",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.77,
+    "categories": [
+      "Abstract",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/tz19PfklMdAdjxV9WArraA__large/img/e5IJxTYvZIm5sLF16f5pcyG_fIw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3718275.jpg"
+  },
+  {
+    "bggId": 173346,
+    "name": "7 Wonders Duel",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.22,
+    "categories": [
+      "Ancient",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/f-02w0zVqX3AlzcUG2cbcw__large/img/rfRGusUp65a83Pf_v9v4Ll9llss=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2599422.png"
+  },
+  {
+    "bggId": 68448,
+    "name": "7 Wonders",
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.33,
+    "categories": [
+      "Ancient",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/uEWjByT0clnEML6xQkmhNA__large/img/Dlgj4edht-HJtc0bNbkiMYv8jV8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic712782.jpg"
+  },
+  {
+    "bggId": 36218,
+    "name": "Dominion",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.36,
+    "categories": [
+      "Card Game",
+      "Medieval"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/X3KAZ98v0NuZWPiZjt-gPg__large/img/tFX5347rU1hWlrnBcYfvymaz4wU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2798738.jpg"
+  },
+  {
+    "bggId": 13,
+    "name": "Catan",
+    "minPlayers": 3,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 2.32,
+    "categories": [
+      "Economic",
+      "Negotiation"
+    ],
+    "mechanics": [
+      "Trading",
+      "Dice Rolling"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/W3Bsga_uLP9kO91gZ7H8yw__large/img/YkcG0na-WYvjzCGkooetxsFY0mU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2419375.jpg"
+  },
+  {
+    "bggId": 9209,
+    "name": "Ticket to Ride",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 1.83,
+    "categories": [
+      "Trains"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Route Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/mWVR6VmkxcG-nELXkYweHQ__large/img/ArfaQzfXvZGak-KXlWq8V2LoPrY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1927862.jpg"
+  },
+  {
+    "bggId": 30549,
+    "name": "Pandemic",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 2.42,
+    "categories": [
+      "Medical"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/S3ybV1LAp-8SnHIXLLjVqA__large/img/veSQoM47_pbCyoiaY6fr-QHHIUM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1534148.jpg"
+  },
+  {
+    "bggId": 148228,
+    "name": "Splendor",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.78,
+    "categories": [
+      "Economic",
+      "Renaissance"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Engine Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/rwOMxx4q5yuElIvo-1-OFw__large/img/M42iD6hRgC21RncyzxmEWmIM_aU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1904079.jpg"
+  },
+  {
+    "bggId": 178900,
+    "name": "Codenames",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.31,
+    "categories": [
+      "Party",
+      "Word Game"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/F_KDEu0GjdClml8N7c8Imw__large/img/U_1slclNoTv-YoNRTvtM7LNOVOQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2582929.jpg"
+  },
+  {
+    "bggId": 2651,
+    "name": "Power Grid",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 120,
+    "maxPlaytime": 120,
+    "weight": 3.28,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Auction",
+      "Network Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ttph89Gdy50F2Ii6OiHOrA__large/img/2yp7HRFqxds_MLFjKw0hseEErTM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic173153.jpg"
+  },
+  {
+    "bggId": 39463,
+    "name": "Cosmic Encounter",
+    "minPlayers": 3,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 2.55,
+    "categories": [
+      "Sci-Fi",
+      "Negotiation"
+    ],
+    "mechanics": [
+      "Negotiation",
+      "Variable Player Powers"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/9J-r8DSqocEYjt3FJ8i9fQ__large/img/qwemEkS57WlGe2UKsByvJYRDRAM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3259712.jpg"
+  },
+  {
+    "bggId": 131357,
+    "name": "Coup",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.42,
+    "categories": [
+      "Bluffing",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Bluffing",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/H0LomaCTd6MVXvH1KqUaeQ__large/img/RfHgU3kfYm4p0ROaZ1kudUVzegY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1929575.jpg"
+  },
+  {
+    "bggId": 209010,
+    "name": "Mechs vs. Minions",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.41,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Programming"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/n4J5LebMj0DQD016qW7ABw__large/img/6b8hTlzFBqyUoGctJ0Gs93c7R4E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3184103.jpg"
+  },
+  {
+    "bggId": 164928,
+    "name": "Orléans",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 3.07,
+    "categories": [
+      "Medieval",
+      "Economic"
+    ],
+    "mechanics": [
+      "Bag Building",
+      "Worker Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/A2dSO3--aKwmtDbgAmnp2w__large/img/4TpWMQNYMn8g7AO1J_VjqyRDRAE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2224818.jpg"
+  },
+  {
+    "bggId": 84876,
+    "name": "The Castles of Burgundy",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 90,
+    "weight": 3,
+    "categories": [
+      "Medieval",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Tile Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/5CFwjd8zTcGYVUnkXh04hw__large/img/Q8h1ciuPvdrGJEIbkGEVxXNLo1Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1176894.jpg"
+  },
+  {
+    "bggId": 170216,
+    "name": "Blood Rage",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.88,
+    "categories": [
+      "Fantasy",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Drafting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/HkZSJfQnZ3EpS214xtuplg__large/img/RBiaX-01NaTP0EvPppqSGYGjVsA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2439223.jpg"
+  },
+  {
+    "bggId": 205059,
+    "name": "Mansions of Madness",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 120,
+    "maxPlaytime": 180,
+    "weight": 2.67,
+    "categories": [
+      "Horror",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/LIooA9bTdjnE9qmhjL-UFw__large/img/wrDpsVZHstuOM7noVWS--R5dQ3s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3118622.jpg"
+  },
+  {
+    "bggId": 521,
+    "name": "Crokinole",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.27,
+    "categories": [
+      "Dexterity"
+    ],
+    "mechanics": [
+      "Flicking"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/Dp5y9SBCUwSRqbJMQuXOWQ__large/img/-MkOtFYlDeTBeNLeh1rOXVjRc-A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic133514.jpg"
+  },
+  {
+    "bggId": 199792,
+    "name": "Everdell",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 40,
+    "maxPlaytime": 80,
+    "weight": 2.81,
+    "categories": [
+      "Animals",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Engine Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/fjE7V5LNq31yVEW_yuqI-Q__large/img/uCklaKWtTCAsFn7qdjjoDgNUxNI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3918905.png"
+  },
+  {
+    "bggId": 163412,
+    "name": "Patchwork",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 15,
+    "maxPlaytime": 30,
+    "weight": 1.61,
+    "categories": [
+      "Abstract",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/1I-ON88kPg5ILUoTuhxf1A__large/img/UY1PHmRPeUc4QBusFrGl8HXniKE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2228231.jpg"
+  },
+  {
+    "bggId": 70323,
+    "name": "King of Tokyo",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.49,
+    "categories": [
+      "Fantasy",
+      "Fighting"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Press Your Luck"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/m_RzXpHURC0_xLkvRSR_sw__large/img/gwk5iPPUjwleyG3yhgAE2TIwTx4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3043734.jpg"
+  },
+  {
+    "bggId": 150376,
+    "name": "Dead of Winter",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.04,
+    "categories": [
+      "Horror",
+      "Zombie"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Traitor",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/-mclECdDjmAbYx9QeLM2DA__large/img/tR2uZq7M8Ef1IEBVV64yW0rDdYI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2409105.jpg"
+  },
+  {
+    "bggId": 124361,
+    "name": "Concordia",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.04,
+    "categories": [
+      "Ancient",
+      "Economic"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Deck Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/I3yKsl9Erl0PxE7lP5VOzQ__large/img/x2ONtVLt2oX05xEt8LjrHZJYCxQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1799662.jpg"
+  },
+  {
+    "bggId": 193738,
+    "name": "Great Western Trail",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 75,
+    "maxPlaytime": 150,
+    "weight": 3.69,
+    "categories": [
+      "American West",
+      "Economic"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/hRBSXu_idtpIVuOvH8knXQ__large/img/MnPBucASzsCBCoB1cHuPGTsiZ5g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3630460.jpg"
+  },
+  {
+    "bggId": 215,
+    "name": "Tichu",
+    "minPlayers": 4,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.3,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Trick-Taking",
+      "Team-Based"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/4nary__XkcWYFtd9o_abZg__large/img/ZCZ4ELqTQ4cDliEd_ja6kE8E7PI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2227233.jpg"
+  },
+  {
+    "bggId": 171623,
+    "name": "The Voyages of Marco Polo",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 40,
+    "maxPlaytime": 100,
+    "weight": 3.2,
+    "categories": [
+      "Medieval",
+      "Travel"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/n1G7_aWToLAAB7Mqt8iwyA__large/img/QAZOeJBpffxorGeMdUM49yfjvZQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2461346.png"
+  },
+  {
+    "bggId": 192135,
+    "name": "Too Many Bones",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.66,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/-EB8c-OIEZfHi1p-8qwiUw__large/img/YAnYLXNAfVLqYWgPAKQzU12r3Oc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3684814.jpg"
+  },
+  {
+    "bggId": 175914,
+    "name": "Food Chain Magnate",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 120,
+    "maxPlaytime": 240,
+    "weight": 4.21,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Network Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/Wtxml94LAXsIWQCxGPS63Q__large/img/fxcbYnoIWOkxEoquS3Eqrr_bNq8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2649434.png"
+  },
+  {
+    "bggId": 266524,
+    "name": "PARKS",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.16,
+    "categories": [
+      "Nature",
+      "Travel"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Worker Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/3sKx8ESIT3sYaN3zMOiZfg__large/img/5RWzDoApbptNEReEyp_Fg_nnvXU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5295836.png"
+  },
+  {
+    "bggId": 285967,
+    "name": "Unmatched",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 40,
+    "weight": 1.9,
+    "categories": [
+      "Fantasy",
+      "Fighting"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/_al0scMG_pQfGVM31Scf1Q__large/img/9AXXtp9XJIS17ofxgRilbklNXU4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6107853.jpg"
+  },
+  {
+    "bggId": 171131,
+    "name": "Captain Sonar",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 2.09,
+    "categories": [
+      "Nautical"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Real-Time"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/FoHWR06ysAmjZRbvUx6JSA__large/img/D8gVsMVCrQZ0cR2nSQIgf4WAinY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3116960.jpg"
+  },
+  {
+    "bggId": 822,
+    "name": "Carcassonne",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.91,
+    "categories": [
+      "Medieval",
+      "Territory Building"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Area Control"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/okM0dq_bEXnbyQTOvHfwRA__large/img/RmoGPJ5a3VBrBwYE30C0MuI1MJY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6544250.png"
+  },
+  {
+    "bggId": 204583,
+    "name": "Kingdomino",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 15,
+    "maxPlaytime": 20,
+    "weight": 1.2,
+    "categories": [
+      "Medieval",
+      "Territory Building"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/c0m3gwZTcfKoLI63ASio8g__large/img/PiwyzD7Noq6l_QK3epNMoT3TJ1U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8443569.png"
+  },
+  {
+    "bggId": 194655,
+    "name": "Santorini",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.78,
+    "categories": [
+      "Abstract",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Grid Movement",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/665Ply7Ho1WVf1v1iZlWeg__large/img/P33HL3Cl7lPq1umv25WtE_TK4ts=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3283110.png"
+  },
+  {
+    "bggId": 218603,
+    "name": "Photosynthesis",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.36,
+    "categories": [
+      "Abstract",
+      "Nature"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Action Points"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/HhkYuVxMy-XrRCBWmZ78Eg__large/img/h9GcBtbH8jMUgk1vRhF-Sb4nbFw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3364832.jpg"
+  },
+  {
+    "bggId": 70919,
+    "name": "Takenoko",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.95,
+    "categories": [
+      "Animals",
+      "Farming"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/_59mnnEQ1sjI8iWzz_Fslg__large/img/ROnpArawRc8AfAiq6amHywaxAhY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1286583.jpg"
+  },
+  {
+    "bggId": 181304,
+    "name": "Mysterium",
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "minPlaytime": 42,
+    "maxPlaytime": 42,
+    "weight": 1.9,
+    "categories": [
+      "Horror",
+      "Mystery"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/wfeAiLK5n5hD1omhnlYLLA__large/img/x-NNwl5m-ZKVIyZpHokA4xuL6ik=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2601683.jpg"
+  },
+  {
+    "bggId": 256382,
+    "name": "Villainous",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 40,
+    "maxPlaytime": 120,
+    "weight": 2.07,
+    "categories": [
+      "Fantasy",
+      "Movies"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/AIJAqEftRl4mpwuAno753g__large/img/xI7yzfKdlSivHnM-Qv47oPdIJUM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6427405.jpg"
+  },
+  {
+    "bggId": 1294,
+    "name": "Clue",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.42,
+    "categories": [
+      "Mystery",
+      "Deduction"
+    ],
+    "mechanics": [
+      "Deduction",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/sF0kvSSs8CjC3bEsqUmTBQ__large/img/tQdD6I8ySPbwY9VhdSMknYTNCfY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic190573.jpg"
+  },
+  {
+    "bggId": 2453,
+    "name": "Blokus",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 30,
+    "weight": 1.52,
+    "categories": [
+      "Abstract",
+      "Territory Building"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Area Control"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/96YA5wUJDxtPkmPxemr5Qg__large/img/QdGSqZU5IaYZl4lCn4clFqLQU-U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2197702.jpg"
+  },
+  {
+    "bggId": 244521,
+    "name": "The Quacks of Quedlinburg",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.95,
+    "categories": [
+      "Fantasy",
+      "Medieval"
+    ],
+    "mechanics": [
+      "Bag Building",
+      "Press Your Luck"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/B1bLRWzTASZ-xx9NoAE79A__large/img/otnOAurysl1ugDmJS0eB8uAeQek=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8780293.png"
+  },
+  {
+    "bggId": 295947,
+    "name": "Cascadia",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.85,
+    "categories": [
+      "Animals",
+      "Nature"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/0xWhFCArAEUhcGUB_NxYcA__large/img/lQeVsYLM-h_PgdhAifMatcQVwzs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8502240.jpg"
+  },
+  {
+    "bggId": 283155,
+    "name": "Calico",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 2.16,
+    "categories": [
+      "Animals",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Pattern Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/niDEsQMiIaunvWy9gwyDYg__large/img/z4D5F9H9UWLEpV1WqFJcQYdF0es=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5956012.jpg"
+  },
+  {
+    "bggId": 295486,
+    "name": "My City",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.72,
+    "categories": [
+      "City Building"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Legacy"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/fz4aYmycg9baQlm_DzwyKA__large/img/nwOgsZBQ_A8MIIeCKpqtqYpRmrQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7443423.jpg"
+  },
+  {
+    "bggId": 199561,
+    "name": "Sagrada",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.87,
+    "categories": [
+      "Abstract",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Dice Drafting",
+      "Pattern Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/B_kaKkadl0Idq8FH_ax3rw__large/img/ox4-vCk0jIoxro30-PGF8LIBl8w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4124746.jpg"
+  },
+  {
+    "bggId": 274960,
+    "name": "Point Salad",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 15,
+    "maxPlaytime": 30,
+    "weight": 1.12,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Vp5RWMlEaGuTs4J2408Cvw__large/img/-M73z4CxE1wyNMKbZyMWVqInj0I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5350773.jpg"
+  },
+  {
+    "bggId": 209685,
+    "name": "Century: Spice Road",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.82,
+    "categories": [
+      "Economic",
+      "Medieval"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Engine Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/0_KEDk4lCvryf1Ju3YQJxA__large/img/ddVNZym6KUYom9cgDg0gm_hZH3A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3339551.jpg"
+  },
+  {
+    "bggId": 54043,
+    "name": "Jaipur",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.55,
+    "categories": [
+      "Card Game",
+      "Economic"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Trading"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/J2xsIMoIB-gscoxuDUdvuA__large/img/o5A5EgeUyYdcRNCPSlowyML2w7Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic725500.jpg"
+  },
+  {
+    "bggId": 205896,
+    "name": "Karuba",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 40,
+    "weight": 1.47,
+    "categories": [
+      "Adventure",
+      "Exploration"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Route Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/iwevA6XmiNLHn1QnGUucqw__large/img/6mqvMfWk_saYzdY3Q4uM5mmvHVU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3880340.jpg"
+  },
+  {
+    "bggId": 157969,
+    "name": "Sheriff of Nottingham",
+    "minPlayers": 3,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 1.66,
+    "categories": [
+      "Bluffing",
+      "Medieval"
+    ],
+    "mechanics": [
+      "Bluffing",
+      "Negotiation"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/BBgLFKUzr6tcKtlIM2JSFw__large/img/0tKY0nK1zODF5C5Z0N3W2kzbAn4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2075830.jpg"
+  },
+  {
+    "bggId": 34635,
+    "name": "Stone Age",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.48,
+    "categories": [
+      "Prehistoric"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/x0R24JQlzRWkxjcP5B8ZfQ__large/img/Hdi6_7HRF8Aj4N2PMA7MZtBDezw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic340410.jpg"
+  },
+  {
+    "bggId": 123540,
+    "name": "Tokaido",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.69,
+    "categories": [
+      "Travel"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Point-to-Point Movement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/-sUA2HQNFHBxOdzHE6Ywlg__large/img/rENMXXuRigVBwdlF-dzy5nTNRQQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3747956.png"
+  },
+  {
+    "bggId": 244522,
+    "name": "Reef",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.72,
+    "categories": [
+      "Abstract",
+      "Nature"
+    ],
+    "mechanics": [
+      "Pattern Building",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/9ZsPBL9_PJBninDkqzSxOg__large/img/GNG4nDlk9sePyluhsbPp21VKAeg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3941961.png"
+  },
+  {
+    "bggId": 187985,
+    "name": "Lanterns: The Harvest Festival",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.56,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 191862,
+    "name": "Imhotep",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 40,
+    "maxPlaytime": 40,
+    "weight": 1.68,
+    "categories": [
+      "Ancient",
+      "City Building"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/HkAt5n4R8XM0vNozl7fftA__large/img/z6zTzzRlc6ut4coaKSUk_ah1_W8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3029488.jpg"
+  },
+  {
+    "bggId": 265736,
+    "name": "Tiny Towns",
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 2.08,
+    "categories": [
+      "City Building",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Pattern Building",
+      "Drafting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/CPtdGD_Y74UmzUkRBmkEtQ__large/img/dwjxW-OvmAtCufdiIe1LVef2cD0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8501643.jpg"
+  },
+  {
+    "bggId": 198773,
+    "name": "Codenames: Pictures",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.25,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/OFSDgRR7lbFF0W3VP4mISw__large/img/47V9NI7CTv7dfh20Ee9WyUsiMis=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8911187.png"
+  },
+  {
+    "bggId": 262543,
+    "name": "Wavelength",
+    "minPlayers": 2,
+    "maxPlayers": 12,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.06,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Voting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/rnYriTERkVAuKZWEZZx6zg__large/img/jhlgs3lEu0_pMXnyy-im6gojhNE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5558198.jpg"
+  },
+  {
+    "bggId": 39856,
+    "name": "Dixit",
+    "minPlayers": 3,
+    "maxPlayers": 8,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.23,
+    "categories": [
+      "Party",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Storytelling",
+      "Voting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/w1di-VHCq9vlqosAvn00pA__large/img/1Ogjk9BNRqilnOyI7yPmezR93Wk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1298771.jpg"
+  },
+  {
+    "bggId": 46213,
+    "name": "Telestrations",
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.02,
+    "categories": [
+      "Party",
+      "Drawing"
+    ],
+    "mechanics": [
+      "Storytelling"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/7as71nWH4enGRLHrHTAnbA__large/img/negKvTZcpcW8LLW6WQNBcvRkKNc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic630568.jpg"
+  },
+  {
+    "bggId": 254640,
+    "name": "Just One",
+    "minPlayers": 3,
+    "maxPlayers": 7,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1,
+    "categories": [
+      "Party",
+      "Word Game"
+    ],
+    "mechanics": [
+      "Cooperative"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/qKcKjHpzAvLddwBhyindag__large/img/IIJEIbUCo34PgtjpC6JwITSr1VE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4268499.jpg"
+  },
+  {
+    "bggId": 41114,
+    "name": "The Resistance",
+    "minPlayers": 5,
+    "maxPlayers": 10,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.64,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Voting",
+      "Traitor"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/iAqozSi-jNB3lLCbe1mtPQ__large/img/17pzkYocRSKvmiPdmhRrFt2pQjU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic866491.jpg"
+  },
+  {
+    "bggId": 128882,
+    "name": "The Resistance: Avalon",
+    "minPlayers": 5,
+    "maxPlayers": 10,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.78,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Voting",
+      "Traitor",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/LPa6rsGcv8S0-OeNjCOAEQ__large/img/s4Tnz6YIL5l7bD5fEU1_M_ASa9w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1398895.jpg"
+  },
+  {
+    "bggId": 925,
+    "name": "Werewolf",
+    "minPlayers": 8,
+    "maxPlayers": 24,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 1.4,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Voting",
+      "Player Elimination"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/dbKLvMw--0rTKU5ShvZ79A__large/img/nWEquAACN7ykDw1inDfT6fr9-60=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2453810.jpg"
+  },
+  {
+    "bggId": 20100,
+    "name": "Wits & Wagers",
+    "minPlayers": 3,
+    "maxPlayers": 7,
+    "minPlaytime": 25,
+    "maxPlaytime": 25,
+    "weight": 1.1,
+    "categories": [
+      "Party",
+      "Trivia"
+    ],
+    "mechanics": [
+      "Betting",
+      "Voting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/TxojLHTFHfBOBAk9MQSyLg__large/img/8LCiCik5vvcblN5eRnqjHo2rhBo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2558555.jpg"
+  },
+  {
+    "bggId": 33604,
+    "name": "Say Anything",
+    "minPlayers": 3,
+    "maxPlayers": 8,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.02,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Voting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/Df_I7BlTDrPI2qTV-gQFtw__large/img/tM0wjefQZoeMJWRIB_VpjZOKjT4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic312999.jpg"
+  },
+  {
+    "bggId": 156546,
+    "name": "Monikers",
+    "minPlayers": 4,
+    "maxPlayers": 16,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 1.06,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Acting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/1nTcIyQ9QpwFSzzwfqgkAA__large/img/JrGyZ2bza572STtmDTuyh2KRHwI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4813746.png"
+  },
+  {
+    "bggId": 92415,
+    "name": "Skull",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 15,
+    "maxPlaytime": 45,
+    "weight": 1.14,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Bluffing",
+      "Betting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/r7yQ2NvCNbXsyoEZU562ug__large/img/UKNuW_dmJSb8qRmHixps4cbF2YM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7315839.png"
+  },
+  {
+    "bggId": 192291,
+    "name": "Sushi Go Party!",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.29,
+    "categories": [
+      "Card Game",
+      "Party"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/TTKxvTR5bmCCGoTKcEDn3A__large/img/UdK6T7d6T5XwZDkWVzJn_WmfCp4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3729875.jpg"
+  },
+  {
+    "bggId": 155308,
+    "name": "Cash 'n Guns",
+    "minPlayers": 4,
+    "maxPlayers": 8,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.13,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Bluffing",
+      "Voting"
+    ],
+    "tier": "classic",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 153938,
+    "name": "Camel Up",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 20,
+    "maxPlaytime": 30,
+    "weight": 1.47,
+    "categories": [
+      "Animals",
+      "Racing"
+    ],
+    "mechanics": [
+      "Betting",
+      "Dice Rolling"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/jVr1bGBQpshqVPcwvZ7CPg__large/img/w3iwEpNODQKxoVpL__13FAfznP0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1918028.jpg"
+  },
+  {
+    "bggId": 225694,
+    "name": "Decrypto",
+    "minPlayers": 3,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 45,
+    "weight": 1.77,
+    "categories": [
+      "Party",
+      "Word Game"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/3dnjnpxP3mBDIN0GNYLpEw__large/img/HEKohEh1AO2ckvNTdpDrCq_wK5Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3857839.jpg"
+  },
+  {
+    "bggId": 147949,
+    "name": "One Night Ultimate Werewolf",
+    "minPlayers": 3,
+    "maxPlayers": 10,
+    "minPlaytime": 10,
+    "maxPlaytime": 10,
+    "weight": 1.36,
+    "categories": [
+      "Bluffing",
+      "Party"
+    ],
+    "mechanics": [
+      "Voting",
+      "Deduction"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/KLDb0vR3w8mfaHgIGF0gHw__large/img/_80YR7nJaikZURSabvv9iUe_sBo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1809823.jpg"
+  },
+  {
+    "bggId": 269210,
+    "name": "Blank Slate",
+    "minPlayers": 3,
+    "maxPlayers": 8,
+    "minPlaytime": 20,
+    "maxPlaytime": 35,
+    "weight": 1,
+    "categories": [
+      "Party",
+      "Word Game"
+    ],
+    "mechanics": [
+      "Simultaneous Action"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/5F4jkBIAbtkLJXOtvBjh3g__large/img/PZoLNhzVXbYyBJ03rCwSKTN4ueg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8014068.jpg"
+  },
+  {
+    "bggId": 296657,
+    "name": "Herd Mentality",
+    "minPlayers": 4,
+    "maxPlayers": 20,
+    "minPlaytime": 20,
+    "maxPlaytime": 30,
+    "weight": 1,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Voting"
+    ],
+    "tier": "classic",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 262215,
+    "name": "Don't Get Got!",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 120,
+    "weight": 1,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Acting"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/jOLEKfuTY4gLszR1h-0Bfw__large/img/bXSrPM2PB8nuz3D4EUpNFP9O1og=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4338675.jpg"
+  },
+  {
+    "bggId": 320,
+    "name": "Scrabble",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 2.05,
+    "categories": [
+      "Word Game"
+    ],
+    "mechanics": [
+      "Tile Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/kB-fyH2h56vxnv-LGKw5sg__large/img/BH_kWodkhxpMtv4aKiw_g8EZQbM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic310289.jpg"
+  },
+  {
+    "bggId": 2952,
+    "name": "Trivial Pursuit",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 1.22,
+    "categories": [
+      "Trivia"
+    ],
+    "mechanics": [
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BpUuBk4GQXONymr-Fnn-oA__large/img/ys58_Zs2B1bhN9trfxquiINQhFE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic675702.jpg"
+  },
+  {
+    "bggId": 2281,
+    "name": "Pictionary",
+    "minPlayers": 3,
+    "maxPlayers": 16,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 1.14,
+    "categories": [
+      "Party",
+      "Drawing"
+    ],
+    "mechanics": [
+      "Team-Based"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BuTjMwB_1fJU9hYxyrfwoQ__large/img/zYSE9dO-6UIlbDQkunXhOTBUrbM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic414053.jpg"
+  },
+  {
+    "bggId": 891,
+    "name": "Cranium",
+    "minPlayers": 4,
+    "maxPlayers": 16,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 1.24,
+    "categories": [
+      "Party",
+      "Trivia"
+    ],
+    "mechanics": [
+      "Team-Based",
+      "Acting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/vBk8evn_uZtVaqN2CVTZ_Q__large/img/XeV0vRRNDQ-qGuCCfvJlTHMKzSU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1540733.jpg"
+  },
+  {
+    "bggId": 181,
+    "name": "Risk",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 120,
+    "maxPlaytime": 120,
+    "weight": 1.88,
+    "categories": [
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/qrMfW69evISdrhs_oqu33g__large/img/YPcLisa_ISq2kvY7MbWRda1ypCI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1038903.jpg"
+  },
+  {
+    "bggId": 1406,
+    "name": "Monopoly",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 60,
+    "maxPlaytime": 180,
+    "weight": 1.67,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Trading"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/SpBBKBGHeeAsvXDQZCoLEg__large/img/h0lD2ZpiHrSrnhCj_VHSKEed5rY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic208474.jpg"
+  },
+  {
+    "bggId": 1293,
+    "name": "Boggle",
+    "minPlayers": 1,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.26,
+    "categories": [
+      "Word Game"
+    ],
+    "mechanics": [
+      "Real-Time"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/kMn9YNGRVGhytWLLznpNnw__large/img/KNhSFIuTot5q1F4GrXKtPCAETcY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic198033.jpg"
+  },
+  {
+    "bggId": 2425,
+    "name": "Battleship",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.14,
+    "categories": [
+      "Nautical",
+      "Deduction"
+    ],
+    "mechanics": [
+      "Deduction"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/sckagRLG_ct54dNFvkfrtw__large/img/WMlz8k2zUlb6lstdHwv0WC_XMIU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic510749.jpg"
+  },
+  {
+    "bggId": 2719,
+    "name": "Connect Four",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 10,
+    "maxPlaytime": 10,
+    "weight": 1.1,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Pattern Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ZVdY7PWWCnFE5WJ1S2DgPw__large/img/UiCpn7ITQ8QVvHmAsuX_jh-SQjE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1344905.jpg"
+  },
+  {
+    "bggId": 2452,
+    "name": "Jenga",
+    "minPlayers": 1,
+    "maxPlayers": 8,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.02,
+    "categories": [
+      "Dexterity"
+    ],
+    "mechanics": [
+      "Dexterity"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/PUtoPIEXp2aazjsJPxzEKA__large/img/u_r9rL1Vlws-ioVMFRUvJPEwLFQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic275096.jpg"
+  },
+  {
+    "bggId": 2223,
+    "name": "UNO",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.1,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/oWgb53IuNKCY3y8WUUsr7g__large/img/HUVPfdFT7liNyYMpWu2cM6lOY78=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic389600.jpg"
+  },
+  {
+    "bggId": 2407,
+    "name": "Sorry!",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.08,
+    "categories": [
+      "Racing"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Player Elimination"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ZAGLdCv9IQrCRVb4RT_BMg__large/img/YZZjVjvVsxRzTxhew6By7xwcX3E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic906734.jpg"
+  },
+  {
+    "bggId": 2921,
+    "name": "The Game of Life",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 1.02,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ZfmAYdKh3oB3eiIr8xmbxQ__large/img/g2DqaYzHG_vkCoY58X_Cf7hUmJs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic710742.jpg"
+  },
+  {
+    "bggId": 171,
+    "name": "Chess",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 3.68,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Grid Movement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BJttcLLzup1ymcSaFft4Sg__large/img/7u2Cj_VMcoWfa2sn-neBJVYF9Iw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic272083.jpg"
+  },
+  {
+    "bggId": 183394,
+    "name": "Viticulture: Essential Edition",
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "minPlaytime": 45,
+    "maxPlaytime": 90,
+    "weight": 2.9,
+    "categories": [
+      "Economic",
+      "Farming"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/2muMiNgOIYipDr5fnYJqKg__large/img/1RnOL_IqQ--t0taMyGGHB-6VNeQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2649952.jpg"
+  },
+  {
+    "bggId": 155821,
+    "name": "Inis",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.88,
+    "categories": [
+      "Mythology",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Drafting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/MUv8mvugzK1rsFrcvGthsw__large/img/K-SyONwbidAJaFjoakebdPXQFpI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3112623.jpg"
+  },
+  {
+    "bggId": 127023,
+    "name": "Kemet",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 2.86,
+    "categories": [
+      "Ancient",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Variable Player Powers"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/PKgxVoGBAW6Y-ruuOfC6_w__large/img/iYybIEEFoazTZr7VuVQOw3sed5U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1431241.jpg"
+  },
+  {
+    "bggId": 251247,
+    "name": "Barrage",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 4.04,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Area Control"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/rnKgPZitkF_cCND946AaGw__large/img/eAlZVgQu7nRw_KJ9I_cF2LQ-b3E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7537827.jpg"
+  },
+  {
+    "bggId": 201808,
+    "name": "Clank!: A Deck-Building Adventure",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.21,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Press Your Luck"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/p6yE2N7_TbkD3JV9Jve6Zw__large/img/-3Grt7Sqf344iSP6FNB7Uv87aQQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7526914.jpg"
+  },
+  {
+    "bggId": 150040,
+    "name": "Tzolk'in: The Mayan Calendar",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 3.67,
+    "categories": [
+      "Ancient",
+      "Economic"
+    ],
+    "mechanics": [
+      "Worker Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 120677,
+    "name": "Terra Mystica",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 150,
+    "weight": 3.97,
+    "categories": [
+      "Fantasy",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Network Building",
+      "Variable Player Powers"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/9N8IIDjxS1Ls7DN_WMkyXA__large/img/YOBAs8QbJVGNiQi5qV4B8zXJ_Go=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1356616.jpg"
+  },
+  {
+    "bggId": 246900,
+    "name": "Eclipse: Second Dawn for the Galaxy",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 60,
+    "maxPlaytime": 200,
+    "weight": 3.68,
+    "categories": [
+      "Sci-Fi",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/mXnLAnDX9IY2s3X8tUlUZA__large/img/HnK-V72JitUwSZg6CcKtC4ZB0SI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3989379.jpg"
+  },
+  {
+    "bggId": 3076,
+    "name": "Puerto Rico",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 90,
+    "maxPlaytime": 150,
+    "weight": 3.29,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Variable Phase Order",
+      "Trading"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/7tPNi5CCI1QTnHQ1XZQVBg__large/img/nS3SwI0VI_-Itt3rP-sIo78ba5s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3722077.jpg"
+  },
+  {
+    "bggId": 28143,
+    "name": "Race for the Galaxy",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.98,
+    "categories": [
+      "Sci-Fi",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Variable Phase Order"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/8qcWfLYQlwggrW3aU4LyJA__large/img/Zxgx8G5fnGVXwJjFnCgB_VuoeJU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic543782.jpg"
+  },
+  {
+    "bggId": 182028,
+    "name": "Through the Ages: A New Story of Civilization",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 120,
+    "maxPlaytime": 240,
+    "weight": 4.41,
+    "categories": [
+      "Civilization",
+      "Economic"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Drafting"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/k41TITbSbat5ef3epBSCEw__large/img/ZS5D58_R1dKlnOKlvtlEI4n-1Zo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2757980.jpg"
+  },
+  {
+    "bggId": 185343,
+    "name": "Anachrony",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.97,
+    "categories": [
+      "Sci-Fi",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/AHhQdgbDrNpe6rnJIhs7Pw__large/img/8e_RnpNPtZlfaD4JZQPtlX_U23U=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4046001.jpg"
+  },
+  {
+    "bggId": 73439,
+    "name": "Troyes",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 3.45,
+    "categories": [
+      "Medieval",
+      "Economic"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Worker Placement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/nSjurgTeV6UoNCH5_eGcIw__large/img/kO3HgFuIZvL-6YzESpesbPqIkbE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic879242.jpg"
+  },
+  {
+    "bggId": 123260,
+    "name": "Suburbia",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 90,
+    "weight": 2.78,
+    "categories": [
+      "City Building",
+      "Economic"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/GAh9s78F6fHlIU8lyUhykQ__large/img/fbGH_gFMiWTb4E5lrnv_D83HrTs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1353716.jpg"
+  },
+  {
+    "bggId": 148949,
+    "name": "Istanbul",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 40,
+    "maxPlaytime": 60,
+    "weight": 2.6,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Grid Movement",
+      "Pick-up and Deliver"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/wJNPg6fWCSCQQVfSeJF1JQ__large/img/FDsJdqI-6IYA_AChSwgiOFAEZw0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2038410.jpg"
+  },
+  {
+    "bggId": 247763,
+    "name": "Marco Polo II: In the Service of the Khan",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.33,
+    "categories": [
+      "Medieval",
+      "Travel"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/K3FGCkHspZsFxHB-gcaOOA__large/img/kWjfQSxv_bvq_MrzhGb719Os6xw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4086738.jpg"
+  },
+  {
+    "bggId": 177736,
+    "name": "A Feast for Odin",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 120,
+    "weight": 3.86,
+    "categories": [
+      "Economic",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Tile Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/r1sCuYoYHPFiVmACrpDM_g__large/img/aBKEzCqIqotZhSdfsAwpQDm2Y4Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2896407.jpg"
+  },
+  {
+    "bggId": 259960,
+    "name": "Nemesis",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 90,
+    "maxPlaytime": 180,
+    "weight": 3.42,
+    "categories": [
+      "Horror",
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Traitor"
+    ],
+    "tier": "popular",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 266810,
+    "name": "Paladins of the West Kingdom",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.67,
+    "categories": [
+      "Medieval",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Deck Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/6u6-fucdcnLBkV1r1f420w__large/img/uCa-lcVsLaJm1LcfOBf9zs4pUyY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5042568.jpg"
+  },
+  {
+    "bggId": 236457,
+    "name": "Architects of the West Kingdom",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 80,
+    "weight": 2.77,
+    "categories": [
+      "Medieval",
+      "City Building"
+    ],
+    "mechanics": [
+      "Worker Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/GHFLij-SKZwddJ03GuP-cQ__large/img/PnLYppmY3vFGkVrQ49PCzCRauVU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5042560.jpg"
+  },
+  {
+    "bggId": 245733,
+    "name": "Raiders of the North Sea",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 80,
+    "weight": 2.53,
+    "categories": [
+      "Medieval",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 296151,
+    "name": "Viscounts of the West Kingdom",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 3.4,
+    "categories": [
+      "Medieval",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Worker Placement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/ijGarEGY6eIGpKlDErF3XQ__large/img/BliNwZqYDRY5-vSSwl__SNKqVOk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7463919.jpg"
+  },
+  {
+    "bggId": 267378,
+    "name": "Underwater Cities",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 80,
+    "maxPlaytime": 150,
+    "weight": 3.55,
+    "categories": [
+      "Sci-Fi",
+      "City Building"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/KJ7S0Cv32wJ0CdBHj7gwcg__large/img/jLPIHTWJJ27o2zudBxlG-llS3QI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4487174.jpg"
+  },
+  {
+    "bggId": 276025,
+    "name": "Maracaibo",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 120,
+    "weight": 3.74,
+    "categories": [
+      "Nautical",
+      "Economic"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Point-to-Point Movement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/TlxFdLesn_UY60zVuexHKQ__large/img/fxyYnu8vm9N5Wc7gy2BgLO4ujTk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5924202.jpg"
+  },
+  {
+    "bggId": 229853,
+    "name": "Teotihuacan: City of Gods",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.65,
+    "categories": [
+      "Ancient",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/Ij5FONNUvya88I7HfPXRxQ__large/img/NeCU_ymBezXcHz4ClvlBH5kUmwU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3949618.jpg"
+  },
+  {
+    "bggId": 65244,
+    "name": "Forbidden Island",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.74,
+    "categories": [
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/04ra_1iD6eaXm7lhUYe5UA__large/img/FUcK-lAxiqYV94hevU3Pxsqq_RE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1586042.jpg"
+  },
+  {
+    "bggId": 136063,
+    "name": "Forbidden Desert",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.96,
+    "categories": [
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/OU26qQZoHJodxSFKiR5IzA__large/img/EDSGYk_4GNThe5kTiPOInsm_tbg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1528722.jpg"
+  },
+  {
+    "bggId": 100901,
+    "name": "Flash Point: Fire Rescue",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 2.13,
+    "categories": [
+      "Rescue"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/esap-eKo4Z7Mtz57HWyYmA__large/img/QmezTz9AQK1-s8qlg-7ohsLSTdw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1107330.png"
+  },
+  {
+    "bggId": 98778,
+    "name": "Hanabi",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 25,
+    "maxPlaytime": 25,
+    "weight": 1.72,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/D3FzyDkgcW-4FgiusU8xbA__large/img/PiX7VV_nS9JT2AHNzFSDzuZbKzg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1766494.jpg"
+  },
+  {
+    "bggId": 284083,
+    "name": "The Crew: The Quest for Planet Nine",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 2,
+    "categories": [
+      "Card Game",
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Trick-Taking"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Mb9JwWsaUX0MJtozc9uCbQ__large/img/gk8ftva5lGa6462sWXpdeOgwAmc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5544620.png"
+  },
+  {
+    "bggId": 285774,
+    "name": "Marvel Champions: The Card Game",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 90,
+    "weight": 2.86,
+    "categories": [
+      "Card Game",
+      "Comic Book"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Deck Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/O1I_FcTL6RoT4FVTbyurbw__large/img/IC-vDnlm30rZKyln8LSYKg8agO8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5624822.jpg"
+  },
+  {
+    "bggId": 113924,
+    "name": "Zombicide",
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "minPlaytime": 60,
+    "maxPlaytime": 180,
+    "weight": 2.24,
+    "categories": [
+      "Horror",
+      "Zombie"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ZqjfzvtaTIT5FYp1D2CfKw__large/img/AatjVS_sDT6Tfi60po-irzr5PbI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1196191.jpg"
+  },
+  {
+    "bggId": 10547,
+    "name": "Betrayal at House on the Hill",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.38,
+    "categories": [
+      "Horror",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Traitor",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/MEwu-odppZ8PTRq12LTDcg__large/img/BoyyRYl_LTDbKR1OUgHEsBBuwc8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic828598.jpg"
+  },
+  {
+    "bggId": 218417,
+    "name": "Aeon's End",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.82,
+    "categories": [
+      "Fantasy",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Deck Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/ZhPv7L84-cbvQNE__EtGmg__large/img/PXW0_UxBQNfY-Z_5iX1cz7BoFNE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5979615.jpg"
+  },
+  {
+    "bggId": 127398,
+    "name": "Robinson Crusoe: Adventures on the Cursed Island",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.81,
+    "categories": [
+      "Adventure",
+      "Exploration"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Worker Placement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/1gT81flnRKm_Nf2aBn5_rQ__large/img/kfdTwFoVAd7TdvDItDI-s9hUuCg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1405984.jpg"
+  },
+  {
+    "bggId": 146021,
+    "name": "Eldritch Horror",
+    "minPlayers": 1,
+    "maxPlayers": 8,
+    "minPlaytime": 120,
+    "maxPlaytime": 240,
+    "weight": 3.28,
+    "categories": [
+      "Horror",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/oxdsZKIX5_3ovDo38EIaeg__large/img/dplVG7fYjLdFjvcxyS3PVB6Gplw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1872452.jpg"
+  },
+  {
+    "bggId": 307589,
+    "name": "Sleeping Gods",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 1200,
+    "weight": 3.24,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Storytelling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 124708,
+    "name": "Mice and Mystics",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.62,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/pZFrbWXBzrkxqOotg05D9Q__large/img/T7xrxQdLT8BsZCc543CsLHzWc9k=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1312072.jpg"
+  },
+  {
+    "bggId": 37046,
+    "name": "Ghost Stories",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.96,
+    "categories": [
+      "Horror",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/BXzC4DH3TSqQwY93RuUdrQ__large/img/xK_ZZomrfWwdwgblPvp0W_muvK0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic346825.jpg"
+  },
+  {
+    "bggId": 147020,
+    "name": "Star Realms",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.95,
+    "categories": [
+      "Sci-Fi",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Deck Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/G3ebVWWtIKklk-UiDGMiWA__large/img/YoES913eRYQPj5BjmiVDYrCvFLs=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3712750.jpg"
+  },
+  {
+    "bggId": 198994,
+    "name": "Hero Realms",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.88,
+    "categories": [
+      "Fantasy",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Deck Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/6xc4TuJynN5o_ZF0fHOdAA__large/img/eejPOKpjo2aWILLCkwx-Gpp8TiA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6162556.png"
+  },
+  {
+    "bggId": 50,
+    "name": "Lost Cities",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.52,
+    "categories": [
+      "Card Game",
+      "Exploration"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/-LWmucH4oWggye-IUdZP2g__large/img/CQ7u9JKkm7G14Q-59AuK2JCTHLE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3937927.jpg"
+  },
+  {
+    "bggId": 199163,
+    "name": "Hanamikoji",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.67,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 274364,
+    "name": "Watergate",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.31,
+    "categories": [
+      "Political"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Tug of War"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/5ayfrdgSFPnfhXupeOy0WQ__large/img/gjaPIvkcQlK5Yn3-zbTkyyJ9gLg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4682321.jpg"
+  },
+  {
+    "bggId": 115746,
+    "name": "War of the Ring: Second Edition",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 150,
+    "maxPlaytime": 180,
+    "weight": 4.07,
+    "categories": [
+      "Fantasy",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Area Control"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/ImPgGag98W6gpV1KV812aA__large/img/rcABomN0JL4VATpqOSHX5HKnAHI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1215633.jpg"
+  },
+  {
+    "bggId": 18602,
+    "name": "Battle Line",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2,
+    "categories": [
+      "Ancient",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/z0NrmUxYA2UlHkOWglYm2g__large/img/107NZxSQuAXK9pA0p74CzbcXm3Y=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic352484.jpg"
+  },
+  {
+    "bggId": 372,
+    "name": "Schotten Totten",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.72,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/69mwXe7c6HNYmT6S35Y4zg__large/img/ymV5zhB6MUtQfxS7Z26AHIr9bo8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2932872.jpg"
+  },
+  {
+    "bggId": 118048,
+    "name": "Targi",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.39,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/FuVYgLqXyMrgEIigXK927w__large/img/GMoxpIrJeMlBjL1-3BVZxyWPQ5o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1204085.jpg"
+  },
+  {
+    "bggId": 221965,
+    "name": "The Fox in the Forest",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.59,
+    "categories": [
+      "Card Game",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Trick-Taking"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/spcy6nvsfq-hxYgwEpmidQ__large/img/goytukVN9hhFU8Z7Hv0Ueqx8AyU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3496085.jpg"
+  },
+  {
+    "bggId": 160477,
+    "name": "Onitama",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 15,
+    "maxPlaytime": 20,
+    "weight": 1.93,
+    "categories": [
+      "Abstract",
+      "Fighting"
+    ],
+    "mechanics": [
+      "Grid Movement",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/dsmdaAr6-8KVVvLILx6hNQ__large/img/hafkgjFvYIXkSZAr3q88gxS9uQw=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8255293.jpg"
+  },
+  {
+    "bggId": 142901,
+    "name": "Codex: Card-Time Strategy",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 3.46,
+    "categories": [
+      "Card Game",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Variable Player Powers"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 268864,
+    "name": "Undaunted: Normandy",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 2.24,
+    "categories": [
+      "Wargame"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Dice Rolling"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/k644GhtXEt3xPKTvl9Bwlw__large/img/vOta1rzYzvRmMP_cyTcz5HLd180=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6907515.png"
+  },
+  {
+    "bggId": 129622,
+    "name": "Love Letter",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.19,
+    "categories": [
+      "Card Game",
+      "Deduction"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Player Elimination"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/ndjTyIOR4bX07BvLk8pU3A__large/img/-YpdSb6DOyS4sQrrTCvQEzcva4o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1767106.jpg"
+  },
+  {
+    "bggId": 244992,
+    "name": "The Mind",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.07,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Real-Time"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/q_JGK291hrhnhiRB0667oA__large/img/bldopjTibVnd-lwcQ9XRaLEmGVk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3979766.png"
+  },
+  {
+    "bggId": 12942,
+    "name": "No Thanks!",
+    "minPlayers": 3,
+    "maxPlayers": 7,
+    "minPlaytime": 20,
+    "maxPlaytime": 30,
+    "weight": 1.09,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Press Your Luck"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/2P4-gR4xYLnfZtljfc2dRA__large/img/pEw2aJBElTblnGu_AeZiIMs-MyU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2602161.jpg"
+  },
+  {
+    "bggId": 172,
+    "name": "For Sale",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.27,
+    "categories": [
+      "Card Game",
+      "Economic"
+    ],
+    "mechanics": [
+      "Auction",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/UP8CNZBWtk2ucrvrvIAsTQ__large/img/SCwKOnBeURfdhpTYO7REHtPgrDY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic428389.jpg"
+  },
+  {
+    "bggId": 11971,
+    "name": "Cockroach Poker",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.13,
+    "categories": [
+      "Bluffing",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Bluffing"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/GaUFG1oou_AS5VIXziJhNg__large/img/wqky9cAWYoty2yt0dNYSNPyZ4RY=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic408263.jpg"
+  },
+  {
+    "bggId": 11,
+    "name": "Bohnanza",
+    "minPlayers": 2,
+    "maxPlayers": 7,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.67,
+    "categories": [
+      "Card Game",
+      "Farming"
+    ],
+    "mechanics": [
+      "Trading",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/Cp41jQlkXd2g_XLpGXCvNA__large/img/2qH74vMOpCssyFbzkI7LQHC6Bpc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic217516.jpg"
+  },
+  {
+    "bggId": 432,
+    "name": "6 Nimmt!",
+    "minPlayers": 2,
+    "maxPlayers": 10,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.19,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Simultaneous Action",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/PQoEKkRHdOC76rF7ogEBOQ__large/img/i6lxuh36siKUSZ-RbDABhAAun5A=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic272635.jpg"
+  },
+  {
+    "bggId": 5782,
+    "name": "Coloretto",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.29,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Press Your Luck"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/Y2BSKDHzJViMCa9B07T1Og__large/img/joVnH4YDYvNO1W5LQa15j8nxMlE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic28410.jpg"
+  },
+  {
+    "bggId": 63268,
+    "name": "Spot It!",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.02,
+    "categories": [
+      "Card Game",
+      "Party"
+    ],
+    "mechanics": [
+      "Pattern Recognition",
+      "Real-Time"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/dTeJa3rSzK2I0Uz8I_fgrQ__large/img/HXr9UuajVVb0tIeKtnuuRsip-Z8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2099935.jpg"
+  },
+  {
+    "bggId": 25669,
+    "name": "Qwirkle",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.6,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Pattern Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/p3jdBUtBkUGE2PHVembF1w__large/img/0DuOaNQknlsaxsP5N-Y3Ioo8MqI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1282860.jpg"
+  },
+  {
+    "bggId": 2375,
+    "name": "Sequence",
+    "minPlayers": 2,
+    "maxPlayers": 12,
+    "minPlaytime": 10,
+    "maxPlaytime": 30,
+    "weight": 1.29,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Pattern Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BAdq2SOrGBd9TTqs9gKsTg__large/img/ARTC4CXwlhJ-e46J4m22-xRoP1Q=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic671452.jpg"
+  },
+  {
+    "bggId": 218333,
+    "name": "Rhino Hero: Super Battle",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 10,
+    "maxPlaytime": 20,
+    "weight": 1.13,
+    "categories": [
+      "Dexterity",
+      "Animals"
+    ],
+    "mechanics": [
+      "Dexterity",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/H_6DF3EeCooAnl469riRbQ__large/img/Uml7AFu2BMYKJeXIJvhmOz_7fGk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3355171.jpg"
+  },
+  {
+    "bggId": 177524,
+    "name": "ICECOOL",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.07,
+    "categories": [
+      "Dexterity"
+    ],
+    "mechanics": [
+      "Flicking"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/jvfSbTGin9ZUioW4Rpi4Pw__large/img/CI2WCtu-Jt64QMV6ycrDkp_UcYU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2937209.png"
+  },
+  {
+    "bggId": 248590,
+    "name": "Throw Throw Burrito",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.04,
+    "categories": [
+      "Party",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Real-Time"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/bpZgnwzQMQTWFbLp1of9gw__large/img/v5Ng2I2b86xoT3cDgMEWGq4R2j0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4033572.jpg"
+  },
+  {
+    "bggId": 253664,
+    "name": "Taco Cat Goat Cheese Pizza",
+    "minPlayers": 2,
+    "maxPlayers": 8,
+    "minPlaytime": 10,
+    "maxPlaytime": 15,
+    "weight": 1,
+    "categories": [
+      "Card Game",
+      "Party"
+    ],
+    "mechanics": [
+      "Pattern Recognition",
+      "Real-Time"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/kzqREB8Rt3sWketWhcshrQ__large/img/H1F8jQlt4iHM016ohgeuWEx5lNM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7021601.jpg"
+  },
+  {
+    "bggId": 172225,
+    "name": "Exploding Kittens",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.06,
+    "categories": [
+      "Card Game",
+      "Party"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Press Your Luck"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/N8bL53-pRU7zaXDTrEaYrw__large/img/5WmNI5pvapmRAB2Mh3jsjCs7DXg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2691976.png"
+  },
+  {
+    "bggId": 233020,
+    "name": "Happy Salmon",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 5,
+    "maxPlaytime": 5,
+    "weight": 1,
+    "categories": [
+      "Party"
+    ],
+    "mechanics": [
+      "Real-Time",
+      "Pattern Recognition"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/hWtxuZNcslSDoKBQsffS5g__large/img/jtKM3lVeqHDFZXq3oqPEj99nrn0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3986681.jpg"
+  },
+  {
+    "bggId": 2397,
+    "name": "Dutch Blitz",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.17,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Real-Time"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/nCq0AepvfoO13rjst0VUnA__large/img/a3y2LhrhIkPIbLSXazseztY3-v4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2231912.jpg"
+  },
+  {
+    "bggId": 1198,
+    "name": "SET",
+    "minPlayers": 1,
+    "maxPlayers": 20,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.52,
+    "categories": [
+      "Card Game",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Pattern Recognition"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/1LnZ1p8KxNCPaRBtPhYCoA__large/img/jG3qXpZAtnjcU_i0PU1jZnzfUC8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1522650.jpg"
+  },
+  {
+    "bggId": 96848,
+    "name": "Mage Knight Board Game",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 150,
+    "maxPlaytime": 240,
+    "weight": 4.28,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/H1GdgZCovoBFFHiaZOdjnQ__large/img/yYZjoEPQCwGIqh0ghJn2Yuly8fU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1294391.jpg"
+  },
+  {
+    "bggId": 43570,
+    "name": "Friday",
+    "minPlayers": 1,
+    "maxPlayers": 1,
+    "minPlaytime": 25,
+    "maxPlaytime": 25,
+    "weight": 2.05,
+    "categories": [
+      "Adventure",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Press Your Luck"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/u12h_gW0NEWzCZNX0TJKeQ__large/img/lMRoyn1rdObE1Nv--aonB3BD7xo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1056824.jpg"
+  },
+  {
+    "bggId": 187617,
+    "name": "Nemo's War",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.35,
+    "categories": [
+      "Adventure",
+      "Nautical"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/HotfgAqHSiRbIEx_M8csJg__large/img/KL9WY68sO4gTvLhxf_C3H1dX8SA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2741048.png"
+  },
+  {
+    "bggId": 306735,
+    "name": "Under Falling Skies",
+    "minPlayers": 1,
+    "maxPlayers": 1,
+    "minPlaytime": 20,
+    "maxPlaytime": 40,
+    "weight": 2.19,
+    "categories": [
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/bRFnYRvEjXuCMG_DZGC4qw__large/img/ckTCiWRgnkSk_PSBYLVgySbBFvk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6005485.jpg"
+  },
+  {
+    "bggId": 263918,
+    "name": "Cartographers",
+    "minPlayers": 1,
+    "maxPlayers": 100,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.92,
+    "categories": [
+      "Fantasy",
+      "Territory Building"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/GifbnAmsA4lfEcDkeaC9VA__large/img/m1XutwkNVyJvPwJAB1Sq7GlERZI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4397932.png"
+  },
+  {
+    "bggId": 233867,
+    "name": "Welcome To...",
+    "minPlayers": 1,
+    "maxPlayers": 100,
+    "minPlaytime": 25,
+    "maxPlaytime": 25,
+    "weight": 1.82,
+    "categories": [
+      "City Building"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Pattern Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/g4XmxyKhNVdhC3QPd1purQ__large/img/16iKcY1R-pGqvaNOiacRsPQfbtQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3761012.jpg"
+  },
+  {
+    "bggId": 251658,
+    "name": "Sprawlopolis",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 15,
+    "maxPlaytime": 20,
+    "weight": 1.81,
+    "categories": [
+      "City Building",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Cooperative"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/NH5OMGG1jzmHk8qxjoCn5A__large/img/-59G7x08huJoYftclQ2ba6f5Ekc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5931555.jpg"
+  },
+  {
+    "bggId": 239464,
+    "name": "Palm Island",
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.56,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/CPJhhXGPCPIIpsTh-p3UQQ__large/img/MmqKnz-OedpXM9qwlPqjSMUJ8Pc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3995767.png"
+  },
+  {
+    "bggId": 179275,
+    "name": "One Deck Dungeon",
+    "minPlayers": 1,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 2.02,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/G_951O7RjRaa5L2AVeqKeg__large/img/NZUQt410Ql8s8NuxY5DcJAwrOiI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3997078.jpg"
+  },
+  {
+    "bggId": 196526,
+    "name": "Coffee Roaster",
+    "minPlayers": 1,
+    "maxPlayers": 1,
+    "minPlaytime": 10,
+    "maxPlaytime": 30,
+    "weight": 2.02,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Bag Building",
+      "Press Your Luck"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/XNphrzWB2Zc5e_NNBLLNxA__large/img/jq1UrIrtRBKnUVbnERyaaxZWZNM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4818329.jpg"
+  },
+  {
+    "bggId": 233078,
+    "name": "Twilight Imperium: Fourth Edition",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 240,
+    "maxPlaytime": 480,
+    "weight": 4.22,
+    "categories": [
+      "Sci-Fi",
+      "Political"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Negotiation",
+      "Variable Player Powers"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/_Ppn5lssO5OaildSE-FgFA__large/img/_n7hDCaP83cBDmRIkjouH2crhj8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3727516.jpg"
+  },
+  {
+    "bggId": 322708,
+    "name": "Descent: Legends of the Dark",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 120,
+    "maxPlaytime": 180,
+    "weight": 3.08,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/eUQ34VhjAnh2ghtUelRplA__large/img/qYL_-OZ8h3QupYetL8Jx01f4Xs4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6378217.jpg"
+  },
+  {
+    "bggId": 164153,
+    "name": "Star Wars: Imperial Assault",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.28,
+    "categories": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Grid Movement"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/pIQ_MXvaoARRp1loCHJuHg__large/img/q1ExBF4BU7tO4shhaSb81QRIYP4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2247647.jpg"
+  },
+  {
+    "bggId": 37111,
+    "name": "Battlestar Galactica: The Board Game",
+    "minPlayers": 3,
+    "maxPlayers": 6,
+    "minPlaytime": 120,
+    "maxPlaytime": 240,
+    "weight": 3.26,
+    "categories": [
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Traitor"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/5Q2w2rFJiFI_uV89KP6ECg__large/img/DNpSxr-_AOo-EIPyVoQFVLALxrQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic354500.jpg"
+  },
+  {
+    "bggId": 181279,
+    "name": "Fury of Dracula",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 120,
+    "maxPlaytime": 180,
+    "weight": 3.18,
+    "categories": [
+      "Horror",
+      "Deduction"
+    ],
+    "mechanics": [
+      "Hidden Movement",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/9qK8gI2N1VrFHxz-dmXiAQ__large/img/SUQTwCjuU6WeZfAKD5MpkQAJFnA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2628062.jpg"
+  },
+  {
+    "bggId": 59959,
+    "name": "Letters from Whitechapel",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 120,
+    "maxPlaytime": 120,
+    "weight": 2.67,
+    "categories": [
+      "Deduction",
+      "Mystery"
+    ],
+    "mechanics": [
+      "Hidden Movement",
+      "Deduction"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/H3G1t-oIjN9gEVVI21FoVg__large/img/roi3h2LCv2PanDZaWbtFBrfeLpo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1545654.jpg"
+  },
+  {
+    "bggId": 282524,
+    "name": "Horrified",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 1.75,
+    "categories": [
+      "Horror",
+      "Movies"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/6viCeylpI6wjuIacl1t3ig__large/img/8dLWKBI7ztYYtiQoMh9S-ewqiYU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7696671.jpg"
+  },
+  {
+    "bggId": 272738,
+    "name": "Jaws",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 1.73,
+    "categories": [
+      "Movies",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Hidden Movement",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/i4434GyVEkUC83_bUUS2pQ__large/img/WYBc58f4zGcb6WE0uYfHvWHx9Cc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6510777.jpg"
+  },
+  {
+    "bggId": 29368,
+    "name": "Last Night on Earth",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.12,
+    "categories": [
+      "Horror",
+      "Zombie"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Hand Management"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/GDAMIquqrvUxS2qvJvmgXw__large/img/YnFKUQVv2C2kIqSalAvUsljlA-s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic207777.jpg"
+  },
+  {
+    "bggId": 264220,
+    "name": "Tainted Grail: The Fall of Avalon",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 3.42,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Deck Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/nxw3sxoirokzJf-SxQHyag__large/img/3HGCTaZSUoi5iXlqkGQ2wnox_I8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5934634.jpg"
+  },
+  {
+    "bggId": 285192,
+    "name": "Destinies",
+    "minPlayers": 1,
+    "maxPlayers": 3,
+    "minPlaytime": 120,
+    "maxPlaytime": 150,
+    "weight": 2.27,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Storytelling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/qRkqSQ7_qZzNeEkhETHoUg__large/img/uv4q4gs5JCdjz-Otf86XTnB1h7I=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6618849.jpg"
+  },
+  {
+    "bggId": 325494,
+    "name": "ISS Vanguard",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.29,
+    "categories": [
+      "Sci-Fi",
+      "Adventure"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/1ySeZNVkVwTvqykMGtHFFQ__large/img/6gmRxHvISGPC7iQafpS0nCOcU8E=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7245199.jpg"
+  },
+  {
+    "bggId": 283355,
+    "name": "Dune (2019)",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 120,
+    "maxPlaytime": 180,
+    "weight": 3.42,
+    "categories": [
+      "Sci-Fi",
+      "Negotiation"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/y185lLyHa8V4Gzz63wdIHg__large/img/SsgxxaNPWauiPwgl1DkNvM43mjk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5735735.jpg"
+  },
+  {
+    "bggId": 172287,
+    "name": "Champions of Midgard",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.6,
+    "categories": [
+      "Fantasy",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Dice Rolling"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/tCQXgkN2CP27Rx531j1Zzw__large/img/wGJFb07-horHMhDL6KrWtY7dqgk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic2548223.png"
+  },
+  {
+    "bggId": 2655,
+    "name": "Hive",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 2.31,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Grid Movement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/WCqKT4Tuw04XFLVjFiqnZw__large/img/7vpsTpS_Z3sU0n7cffXiwSpTaQo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic159511.jpg"
+  },
+  {
+    "bggId": 287954,
+    "name": "Azul: Summer Pavilion",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.91,
+    "categories": [
+      "Abstract",
+      "Puzzle"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/hPfL1_XSqlbXdv-l5mBJRA__large/img/7G6Zk9xuqC_xUImt8uPlr4qu_rg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8278580.png"
+  },
+  {
+    "bggId": 14153,
+    "name": "GIPF",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.78,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Grid Movement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 197405,
+    "name": "Tak",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 20,
+    "maxPlaytime": 60,
+    "weight": 2.63,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Area Control"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/pgJUsRt3inyH0hz3NyjU-w__large/img/aanSlhtECpIDYgumnyfHqxwtfA8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6763305.jpg"
+  },
+  {
+    "bggId": 2091,
+    "name": "Ingenious",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 45,
+    "weight": 1.69,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Tile Placement",
+      "Pattern Building"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/H4byPx-HlungI53JCAwAgA__large/img/KoxIlzN9X-IP8yseUH9RNyPvbHc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic721065.jpg"
+  },
+  {
+    "bggId": 140934,
+    "name": "Arboretum",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.18,
+    "categories": [
+      "Card Game",
+      "Nature"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/XYOn10oXBrDqHySf0jvnyQ__large/img/swN-Vu-oF2wP0DEIsVeLKbeEENM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4172124.png"
+  },
+  {
+    "bggId": 262712,
+    "name": "Res Arcana",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 60,
+    "weight": 2.67,
+    "categories": [
+      "Card Game",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Engine Building",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/gcALy45JfcjyKUn6T3mBIQ__large/img/fvnZ8tKyrSVniYDXAUoM9TSYDgo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4422847.jpg"
+  },
+  {
+    "bggId": 63888,
+    "name": "Innovation",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 2.73,
+    "categories": [
+      "Card Game",
+      "Civilization"
+    ],
+    "mechanics": [
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/AO93XpRQ_FNTVMGAIIz8RQ__large/img/YtGoV5JY7ZahvLoapqKUNxFw83w=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1440811.jpg"
+  },
+  {
+    "bggId": 122298,
+    "name": "Mottainai",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 15,
+    "maxPlaytime": 30,
+    "weight": 2.97,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/vLNYnam7J7-CdUkRTCDUjQ__large/img/Jnty1HUc2vR4HEB6itsCxJH8e6M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3554925.jpg"
+  },
+  {
+    "bggId": 217372,
+    "name": "The Quest for El Dorado",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 1.98,
+    "categories": [
+      "Adventure",
+      "Racing"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Route Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/1NLCqkJv5yg6ZXbtHLI_xg__large/img/vYfrM7HkF4zArqCG94bQera1iLk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4960082.jpg"
+  },
+  {
+    "bggId": 246784,
+    "name": "Cryptid",
+    "minPlayers": 3,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 50,
+    "weight": 2.22,
+    "categories": [
+      "Deduction"
+    ],
+    "mechanics": [
+      "Deduction"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 266830,
+    "name": "Dice Throne",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 20,
+    "maxPlaytime": 40,
+    "weight": 2.09,
+    "categories": [
+      "Fantasy",
+      "Fighting"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/47o_swlkRbfpMH3hnFZgtA__large/img/lXiBwjNy0LuEAuUgHgWXsywMHiA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4383594.png"
+  },
+  {
+    "bggId": 263888,
+    "name": "Hadara",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 2.03,
+    "categories": [
+      "Civilization"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 280588,
+    "name": "Iwari",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.83,
+    "categories": [
+      "Abstract",
+      "Territory Building"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 264055,
+    "name": "Draftosaurus",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.22,
+    "categories": [
+      "Animals"
+    ],
+    "mechanics": [
+      "Drafting"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/Qf3UEmmz0E6_rCFGE4heJQ__large/img/1VGa5abd3Z3IpgQHl3giwvslgyE=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7516000.png"
+  },
+  {
+    "bggId": 290236,
+    "name": "Canvas",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.37,
+    "categories": [
+      "Card Game"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Drafting"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/rLGGu9HK70zG0tAU7SuQTA__large/img/t3ztriz7SPKf9m_jUUtj4KUpBl8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7781158.jpg"
+  },
+  {
+    "bggId": 306607,
+    "name": "Furnace",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.07,
+    "categories": [
+      "Economic",
+      "Industrial"
+    ],
+    "mechanics": [
+      "Auction",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 293014,
+    "name": "Nidavellir",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 2.04,
+    "categories": [
+      "Fantasy",
+      "Mythology"
+    ],
+    "mechanics": [
+      "Auction",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/NWmh111NakBrOpS7ImdXow__large/img/UV_iYbh8NdGCJ_SH1Z2_fOTJLjo=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5963979.jpg"
+  },
+  {
+    "bggId": 318977,
+    "name": "Meadow",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.12,
+    "categories": [
+      "Animals",
+      "Nature"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/E_Qjd-VAEWgc4B5tX9H8cA__large/img/Pm9hANZEXroEr1Q2Ynn0gJcJk2M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6282633.jpg"
+  },
+  {
+    "bggId": 328479,
+    "name": "Living Forest",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 40,
+    "maxPlaytime": 40,
+    "weight": 2.16,
+    "categories": [
+      "Fantasy",
+      "Nature"
+    ],
+    "mechanics": [
+      "Bag Building",
+      "Set Collection"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/uebhamK7KOEeGp7Nk71RbQ__large/img/Zq28lL0A6CfwCy3bYM9-Wq2L0pg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8544081.png"
+  },
+  {
+    "bggId": 336986,
+    "name": "Flamecraft",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 1.82,
+    "categories": [
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/3EJeSx_u579iWOBj2dYg9A__large/img/heoPvUrT6YOBVqvJHAX5r3iRMlQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7178436.png"
+  },
+  {
+    "bggId": 364073,
+    "name": "Splendor Duel",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 2.17,
+    "categories": [
+      "Card Game",
+      "Renaissance"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/V1PyFDPNFY4bJFgreLPxmQ__large/img/oM5IbKV259z1OZhq6ZCqDBmsUKI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6929347.jpg"
+  },
+  {
+    "bggId": 350184,
+    "name": "Earth",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 45,
+    "maxPlaytime": 90,
+    "weight": 2.5,
+    "categories": [
+      "Nature",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Engine Building",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/0xqF_KyOb7V26Lu5YT3fxw__large/img/SaczVFb4P-E_EmL0yl2pz4G0Wis=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6699821.jpg"
+  },
+  {
+    "bggId": 366013,
+    "name": "Sky Team",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 15,
+    "maxPlaytime": 15,
+    "weight": 1.94,
+    "categories": [
+      "Aviation"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Dice Rolling"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/-vOrd4bOspibyohYExLqWg__large/img/y3xCoWOyOrkUXlylMCqOGAu0QSM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6940449.png"
+  },
+  {
+    "bggId": 300905,
+    "name": "Heat: Pedal to the Metal",
+    "minPlayers": 1,
+    "maxPlayers": 6,
+    "minPlaytime": 30,
+    "maxPlaytime": 60,
+    "weight": 2.04,
+    "categories": [
+      "Racing"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Deck Building"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/om_JhPlJtBEWAH1mlOssBw__large/img/i_juCb-GMH-QbipzuiO5Wueceoc=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5711976.png"
+  },
+  {
+    "bggId": 233371,
+    "name": "Clank! In! Space!",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.49,
+    "categories": [
+      "Adventure",
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Press Your Luck"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/haDQw7X8Z0VOItfow9eDtg__large/img/7Dt9DImcBzWN5tLb-U9JOAEew7g=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3720843.jpg"
+  },
+  {
+    "bggId": 256226,
+    "name": "Taverns of Tiefenthal",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 75,
+    "weight": 2.41,
+    "categories": [
+      "Medieval"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Dice Rolling"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/YT33GRBYejXnnEyUkQ6dVQ__large/img/WuivOZdrgZWm4wdd0vTYKgpWFX8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7934934.jpg"
+  },
+  {
+    "bggId": 229220,
+    "name": "Clank! Legacy: Acquisitions Incorporated",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 2.73,
+    "categories": [
+      "Adventure",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Deck Building",
+      "Legacy"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/RnM2Vdl080o9OSkZJVCtXA__large/img/N6KAj2U3tZQIq6HtovxUinpDgHQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3983888.jpg"
+  },
+  {
+    "bggId": 281549,
+    "name": "The Crew: Mission Deep Sea",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 2.11,
+    "categories": [
+      "Card Game",
+      "Sci-Fi"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Trick-Taking"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/2O_5JdJiSBRuqRp1x9y0Xg__large/img/P7lBLOuNHZszDkJj5HaM_36RqAg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6918936.png"
+  },
+  {
+    "bggId": 314040,
+    "name": "Revive",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.41,
+    "categories": [
+      "Sci-Fi",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/QSSVboM25AkgRUD2ErJa1A__large/img/F2l7ap4Ob7mKuSlKP5BWtxDbAew=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5534417.png"
+  },
+  {
+    "bggId": 302260,
+    "name": "Harmonies",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 1.82,
+    "categories": [
+      "Nature",
+      "Abstract"
+    ],
+    "mechanics": [
+      "Pattern Building",
+      "Drafting"
+    ],
+    "tier": "popular",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 366161,
+    "name": "Wyrmspan",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.68,
+    "categories": [
+      "Fantasy",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Engine Building",
+      "Set Collection"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/GSwjmvyEaIBObR5WIyhT2g__large/img/8UteodbW3PniT2NT3XGfXe438UI=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7178433.png"
+  },
+  {
+    "bggId": 342526,
+    "name": "Nuts!",
+    "minPlayers": 2,
+    "maxPlayers": 5,
+    "minPlaytime": 15,
+    "maxPlaytime": 25,
+    "weight": 1.2,
+    "categories": [
+      "Animals",
+      "Card Game"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Press Your Luck"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/efNUitGFmB6ld49TY5nA7g__large/img/o8qLqwEN4nHMC1NHJsErmyf1pNk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6279694.png"
+  },
+  {
+    "bggId": 345584,
+    "name": "Knarr",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 30,
+    "weight": 1.72,
+    "categories": [
+      "Card Game",
+      "Medieval"
+    ],
+    "mechanics": [
+      "Set Collection",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/b8gl6w-BqUVgBURdyFcFZg__large/img/-qVVFLKYBwuVFmug9Yvkl_fwwBA=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic7646386.png"
+  },
+  {
+    "bggId": 241451,
+    "name": "Kingdomino Duel",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 20,
+    "maxPlaytime": 20,
+    "weight": 1.41,
+    "categories": [
+      "Abstract"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Pattern Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": ""
+  },
+  {
+    "bggId": 281259,
+    "name": "The Isle of Cats",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 90,
+    "weight": 2.34,
+    "categories": [
+      "Animals",
+      "Fantasy"
+    ],
+    "mechanics": [
+      "Drafting",
+      "Tile Placement"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/dY0vXIBaY6sCUN_GAbzcJA__large/img/poMljCzwXU2pHM-v_lP-k7BPPeM=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5980713.jpg"
+  },
+  {
+    "bggId": 291453,
+    "name": "Pandemic Legacy: Season 0",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 45,
+    "maxPlaytime": 60,
+    "weight": 3.01,
+    "categories": [
+      "Medical",
+      "Spy"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Legacy"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/cf0xxkevbwTGF3VUZymKjg__large/img/rV7VhNycXHc9GnbdFNgNAxAE2e8=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic6398727.png"
+  },
+  {
+    "bggId": 221107,
+    "name": "Pandemic Legacy: Season 2",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 60,
+    "weight": 2.85,
+    "categories": [
+      "Medical"
+    ],
+    "mechanics": [
+      "Cooperative",
+      "Legacy"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/Qtkb-UTvHa0-kxt_MK1nKw__large/img/P7SYwWyCR6SsUVSR6Y1ZTwlgI7s=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3763549.jpg"
+  },
+  {
+    "bggId": 161533,
+    "name": "Lisboa",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 60,
+    "maxPlaytime": 120,
+    "weight": 4.51,
+    "categories": [
+      "Economic",
+      "City Building"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Tile Placement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/OrHS8_a1CqSGiXeTfCk0Wg__large/img/62Yl1BaOwwBkugQjDCLtV7Vp2yk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3209553.jpg"
+  },
+  {
+    "bggId": 35677,
+    "name": "Le Havre",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 30,
+    "maxPlaytime": 150,
+    "weight": 3.73,
+    "categories": [
+      "Economic",
+      "City Building"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Set Collection"
+    ],
+    "tier": "classic",
+    "thumbnail": "https://cf.geekdo-images.com/BMgFONZBoqbGciDI8aHN7A__large/img/WqySi5LZtpcwlis6S8qf25WXoFQ=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic880518.jpg"
+  },
+  {
+    "bggId": 103885,
+    "name": "Star Wars: X-Wing Miniatures Game",
+    "minPlayers": 2,
+    "maxPlayers": 2,
+    "minPlaytime": 30,
+    "maxPlaytime": 45,
+    "weight": 2.46,
+    "categories": [
+      "Sci-Fi",
+      "Miniatures"
+    ],
+    "mechanics": [
+      "Dice Rolling",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/yNqgVxaqoZepir7Hzkfe-Q__large/img/WlOq8LiAoVxeLZdvWPu-ITASc_o=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic1603292.jpg"
+  },
+  {
+    "bggId": 122515,
+    "name": "Keyflower",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 90,
+    "maxPlaytime": 120,
+    "weight": 3.35,
+    "categories": [
+      "Economic"
+    ],
+    "mechanics": [
+      "Auction",
+      "Worker Placement"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/pLuw2RY8ECD4TGx2B8K4SQ__large/img/c23RbvBdmcvYpFjdMmg5S0NNcZg=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic8636881.png"
+  },
+  {
+    "bggId": 216132,
+    "name": "Clans of Caledonia",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 30,
+    "maxPlaytime": 120,
+    "weight": 3.46,
+    "categories": [
+      "Economic",
+      "Strategy"
+    ],
+    "mechanics": [
+      "Network Building",
+      "Trading"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/e7DOkLczUs4NUEYzwUGL7Q__large/img/ApILgi7B2_x-qBwZlftGUzlogJk=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic4165511.jpg"
+  },
+  {
+    "bggId": 184267,
+    "name": "On Mars",
+    "minPlayers": 1,
+    "maxPlayers": 4,
+    "minPlaytime": 90,
+    "maxPlaytime": 150,
+    "weight": 4.67,
+    "categories": [
+      "Sci-Fi",
+      "Economic"
+    ],
+    "mechanics": [
+      "Worker Placement",
+      "Engine Building"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/tskCy5NY82Xw5ZSQkn29zg__large/img/l0ctwOflmSA91hiYQTU4BKHtJjU=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5176598.jpg"
+  },
+  {
+    "bggId": 256960,
+    "name": "Pax Pamir: Second Edition",
+    "minPlayers": 1,
+    "maxPlayers": 5,
+    "minPlaytime": 45,
+    "maxPlaytime": 120,
+    "weight": 3.65,
+    "categories": [
+      "Political",
+      "Wargame"
+    ],
+    "mechanics": [
+      "Area Control",
+      "Hand Management"
+    ],
+    "tier": "hidden-gem",
+    "thumbnail": "https://cf.geekdo-images.com/GKo7TiC3pKIBcZ8AbegR_Q__large/img/8buNNggOiwceLST0zVBCSJBi2V4=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic5591981.jpg"
+  },
+  {
+    "bggId": 167355,
+    "name": "Colt Express",
+    "minPlayers": 2,
+    "maxPlayers": 6,
+    "minPlaytime": 30,
+    "maxPlaytime": 40,
+    "weight": 1.76,
+    "categories": [
+      "American West",
+      "Party"
+    ],
+    "mechanics": [
+      "Programming",
+      "Hand Management"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/zJ3_bNtF7cZWEQ-sfc8GYg__large/img/LG6DOjI01S2U46ziCrbrqi6-D9M=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3756288.jpg"
+  },
+  {
+    "bggId": 230085,
+    "name": "Unmatched: Cobble & Fog",
+    "minPlayers": 2,
+    "maxPlayers": 4,
+    "minPlaytime": 20,
+    "maxPlaytime": 40,
+    "weight": 1.92,
+    "categories": [
+      "Fantasy",
+      "Fighting"
+    ],
+    "mechanics": [
+      "Hand Management",
+      "Variable Player Powers"
+    ],
+    "tier": "popular",
+    "thumbnail": "https://cf.geekdo-images.com/cb8ydtRuQ-SADwD35oHX9w__large/img/rMf0BJbklzGMnkwiEbQ5x5lY1d0=/fit-in/1024x1024/filters:no_upscale():strip_icc()/pic3621105.jpg"
+  }
 ]

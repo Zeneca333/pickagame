@@ -37,7 +37,7 @@ export function parseBggResponse(xml: string): BggGameDetails[] {
       bggId: Number(item["@_id"]),
       name: primaryName || "Unknown",
       description: String(item.description || "").slice(0, 200),
-      thumbnail: String(item.thumbnail || ""),
+      thumbnail: String(item.image || item.thumbnail || ""),
       minPlayers: Number((item.minplayers as Record<string, string>)?.["@_value"] || 0),
       maxPlayers: Number((item.maxplayers as Record<string, string>)?.["@_value"] || 0),
       minPlaytime: Number((item.minplaytime as Record<string, string>)?.["@_value"] || 0),
@@ -54,14 +54,22 @@ export async function fetchBggDetails(bggIds: number[]): Promise<BggGameDetails[
   if (cached && cached.expires > Date.now()) return cached.data;
 
   const results: BggGameDetails[] = [];
-  // BGG allows max 20 IDs per request
+  // BGG allows max 20 IDs per request; 5s timeout to fail fast if blocked
   for (let i = 0; i < bggIds.length; i += 20) {
     const batch = bggIds.slice(i, i + 20);
-    const url = `https://boardgamegeek.com/xmlapi2/thing?id=${batch.join(",")}&stats=1`;
-    const res = await fetch(url);
-    if (!res.ok) continue;
-    const xml = await res.text();
-    results.push(...parseBggResponse(xml));
+    const url = `https://boardgamegeek.com/xmlapi2/thing?id=${batch.join(",")}&type=boardgame&stats=1`;
+    try {
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), 5000);
+      const res = await fetch(url, { signal: controller.signal });
+      clearTimeout(timer);
+      if (!res.ok) continue;
+      const xml = await res.text();
+      results.push(...parseBggResponse(xml));
+    } catch {
+      // BGG blocked or timed out — fall through to seed data
+      continue;
+    }
   }
 
   cache.set(cacheKey, { data: results, expires: Date.now() + CACHE_TTL });

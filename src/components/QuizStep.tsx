@@ -8,23 +8,27 @@ interface QuizStepProps {
   question: string;
   options: QuizOption[];
   onSelect: (value: string) => void;
+  onBack: () => void;
   showTextInput?: boolean;
   textPlaceholder?: string;
   onTextSubmit?: (value: string) => void;
 }
 
 export default function QuizStep({
-  stepNumber, question, options, onSelect,
+  stepNumber, question, options, onSelect, onBack,
   showTextInput, textPlaceholder, onTextSubmit,
 }: QuizStepProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6">
-      <p className="font-mono text-xs tracking-[3px] text-gray-500 mb-2">{stepNumber}</p>
-      <h2 className="font-mono text-2xl font-bold mb-8">{question}</h2>
-      <div className="flex flex-col gap-3 max-w-md w-full">
+      <button onClick={onBack} className="font-mono text-sm text-muted hover:text-accent transition-colors mb-4">
+        &larr; back
+      </button>
+      <p className="font-mono text-sm tracking-[3px] text-muted mb-2">{stepNumber}</p>
+      <h2 className="font-mono text-3xl font-bold mb-8 text-ink">{question}</h2>
+      <div className="flex flex-col gap-3 max-w-lg w-full">
         {options.map((opt) => (
           <button key={opt.value} onClick={() => onSelect(opt.value)}
-            className="p-4 border border-white/15 rounded-md text-left font-mono text-sm hover:border-accent hover:bg-accent/5 transition-all cursor-pointer">
+            className="p-5 border-2 border-ink/10 rounded-xl text-left font-mono text-base hover:border-accent hover:bg-accent-light transition-all cursor-pointer bg-bg-card shadow-sm">
             {opt.label}
           </button>
         ))}
@@ -34,16 +38,16 @@ export default function QuizStep({
           e.preventDefault();
           const input = e.currentTarget.elements.namedItem("favorites") as HTMLInputElement;
           onTextSubmit?.(input.value);
-        }} className="mt-6 max-w-md w-full">
+        }} className="mt-6 max-w-lg w-full">
           <input name="favorites" type="text" placeholder={textPlaceholder}
-            className="w-full p-4 bg-transparent border border-white/15 rounded-md font-mono text-sm focus:border-accent focus:outline-none" />
+            className="w-full p-5 bg-bg-card border-2 border-ink/10 rounded-xl font-mono text-base text-ink focus:border-accent focus:outline-none" />
           <div className="flex gap-3 mt-3">
             <button type="submit"
-              className="flex-1 p-3 bg-accent text-black font-mono font-bold text-sm rounded hover:brightness-110 transition-all">
-              NEXT →
+              className="flex-1 p-4 bg-accent text-white font-mono font-bold text-base rounded-lg hover:brightness-110 transition-all">
+              NEXT &rarr;
             </button>
             <button type="button" onClick={() => onTextSubmit?.("")}
-              className="p-3 border border-white/15 font-mono text-sm rounded text-gray-400 hover:border-accent transition-all">
+              className="p-4 border-2 border-ink/10 font-mono text-base rounded-lg text-muted hover:border-accent transition-all">
               SKIP
             </button>
           </div>

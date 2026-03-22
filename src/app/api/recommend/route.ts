@@ -1,12 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
 import type { UserInputs } from "@/lib/types";
-import { filterSeedGames } from "@/lib/seed-games";
+import { filterSeedGames, scoreSeedGames } from "@/lib/seed-games";
 import { fetchBggDetails } from "@/lib/bgg";
 import { getRecommendations } from "@/lib/claude";
 
 // Simple in-memory rate limiting
 const rateLimitMap = new Map<string, number[]>();
-const RATE_LIMIT = 10;
+const RATE_LIMIT = 30;
 const RATE_WINDOW = 60 * 1000; // 1 minute
 
 function isRateLimited(ip: string): boolean {
@@ -32,28 +32,29 @@ export async function POST(req: NextRequest) {
     const body = (await req.json()) as UserInputs;
 
     // Validate required fields
-    if (!body.scenario || !body.mood || !body.playerCount || !body.gameLength || !body.complexity) {
+    if (!body.scenario || !body.mood || !body.playerCount || !body.gameLength || !body.complexity || !body.discovery) {
       return NextResponse.json(
         { error: "Missing required fields" },
         { status: 400 }
       );
     }
 
-    // Filter seed games by hard constraints
-    const candidates = filterSeedGames(body);
-    if (candidates.length === 0) {
+    // Filter seed games by hard constraints, then score by relevance
+    const filtered = filterSeedGames(body);
+    if (filtered.length === 0) {
       return NextResponse.json(
         { error: "No games match your criteria. Try broader preferences." },
         { status: 404 }
       );
     }
+    const candidates = scoreSeedGames(filtered, body);
 
     // Fetch fresh details from BGG
     const bggIds = candidates.map((g) => g.bggId);
     const bggDetails = await fetchBggDetails(bggIds);
 
-    // Get AI recommendations
-    const recommendations = await getRecommendations(body, bggDetails);
+    // Get AI recommendations (pass seed games as fallback for thumbnails/stats)
+    const recommendations = await getRecommendations(body, bggDetails, candidates);
 
     return NextResponse.json({ games: recommendations });
   } catch (error) {

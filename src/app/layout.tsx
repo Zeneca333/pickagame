@@ -14,12 +14,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "rollfor.fun — Board Game Matchmaker",
+  title: "pickagame.fun — Board Game Matchmaker",
   description:
-    "Roll for your next obsession. Answer a few questions, get matched with board games you'll actually want to play.",
+    "Pick your next obsession. Answer a few questions, get matched with board games you'll actually want to play.",
   openGraph: {
-    title: "rollfor.fun",
-    description: "Roll for your next obsession.",
+    title: "pickagame.fun",
+    description: "Pick your next obsession.",
     type: "website",
   },
 };
@@ -31,7 +31,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${spaceMono.variable} ${inter.variable}`}>
-      <body className="bg-bg text-white font-sans antialiased min-h-screen">
+      <body className="bg-bg text-ink font-sans antialiased min-h-screen">
         {children}
       </body>
     </html>

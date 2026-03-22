@@ -8,6 +8,7 @@ describe("filterSeedGames", () => {
     playerCount: "3-4",
     gameLength: "30-60",
     complexity: "some-strategy",
+    discovery: "popular",
   };
 
   it("filters by player count 3-4", () => {

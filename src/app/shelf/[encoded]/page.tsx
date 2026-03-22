@@ -12,11 +12,11 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const data = decodeShelfData(encoded);
   const title = data
     ? `My Board Game Shelf — ${data.games.map((g) => g.name).join(", ")}`
-    : "rollfor.fun — Board Game Matchmaker";
+    : "pickagame.fun — Board Game Matchmaker";
 
   return {
     title,
-    description: "Check out my board game shelf! Roll for your own at rollfor.fun",
+    description: "Check out my board game shelf! Roll for your own at pickagame.fun",
     openGraph: {
       title: "My Board Game Shelf",
       description: data

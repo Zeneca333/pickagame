@@ -17,6 +17,8 @@ export type Mood =
 export type PlayerCount = "2" | "3-4" | "5+" | "any";
 export type GameLength = "under-30" | "30-60" | "60-120" | "marathon";
 export type Complexity = "easy" | "some-strategy" | "brain-burner";
+export type Discovery = "popular" | "hidden-gems" | "surprise-me";
+export type Tier = "popular" | "classic" | "hidden-gem";
 
 export interface UserInputs {
   scenario: Scenario;
@@ -24,6 +26,7 @@ export interface UserInputs {
   playerCount: PlayerCount;
   gameLength: GameLength;
   complexity: Complexity;
+  discovery: Discovery;
   favorites?: string;
 }
 
@@ -37,6 +40,8 @@ export interface SeedGame {
   weight: number; // 1-5 BGG complexity weight
   categories: string[];
   mechanics: string[];
+  tier: Tier;
+  thumbnail?: string;
 }
 
 export interface RecommendedGame {
@@ -69,7 +74,6 @@ export type FlowStep =
   | "quiz-playercount"
   | "quiz-length"
   | "quiz-complexity"
-  | "quiz-favorites"
+  | "quiz-discovery"
   | "loading"
-  | "swipe"
   | "results";

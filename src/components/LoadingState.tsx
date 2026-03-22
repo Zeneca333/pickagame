@@ -21,8 +21,8 @@ export default function LoadingState() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6">
-      <div className="animate-spin text-4xl mb-6">🎲</div>
-      <p className="font-mono text-lg text-gray-300 animate-pulse">
+      <div className="animate-spin text-5xl mb-6">🎲</div>
+      <p className="font-mono text-xl text-muted animate-pulse">
         {messages[messageIndex]}
       </p>
     </div>

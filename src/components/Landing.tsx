@@ -5,25 +5,25 @@ interface LandingProps {
 export default function Landing({ onStart }: LandingProps) {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 text-center">
-      <p className="font-mono text-xs tracking-[4px] text-gray-500 mb-4">
+      <p className="font-mono text-sm tracking-[4px] text-muted mb-4">
         BOARD GAME MATCHMAKER
       </p>
-      <h1 className="font-mono text-4xl md:text-5xl font-bold mb-2 leading-tight">
+      <h1 className="font-mono text-5xl md:text-6xl font-bold mb-3 leading-tight text-ink">
         roll for your
         <br />
-        next obsession_
+        next obsession<span className="text-accent">_</span>
       </h1>
-      <p className="text-gray-400 text-sm max-w-md mb-8">
+      <p className="text-muted text-lg max-w-md mb-10">
         answer a few quick questions. get matched with board games you&apos;ll
         actually want to play.
       </p>
       <button
         onClick={onStart}
-        className="bg-accent text-black font-mono font-bold text-lg px-8 py-3 rounded hover:brightness-110 transition-all"
+        className="bg-accent text-white font-mono font-bold text-xl px-10 py-4 rounded-lg hover:brightness-110 transition-all shadow-lg shadow-accent/20"
       >
-        ROLL →
+        ROLL &rarr;
       </button>
-      <p className="font-mono text-[11px] text-gray-600 mt-6">
+      <p className="font-mono text-sm text-muted mt-8">
         no sign-up. no bs. just games.
       </p>
     </div>
