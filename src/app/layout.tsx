@@ -19,8 +19,14 @@ export const metadata: Metadata = {
     "Pick your next obsession. Answer a few questions, get matched with board games you'll actually want to play.",
   openGraph: {
     title: "pickagame.fun",
-    description: "Pick your next obsession.",
+    description: "Answer a few vibes-based questions, get matched with board games you'll actually want to play.",
     type: "website",
+    siteName: "pickagame.fun",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "pickagame.fun — Board Game Matchmaker",
+    description: "Answer a few vibes-based questions, get matched with board games you'll actually want to play.",
   },
 };
 

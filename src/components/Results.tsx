@@ -20,7 +20,7 @@ export default function Results({ games, onRollAgain }: ResultsProps) {
 
   const encoded = useMemo(() => {
     return encodeShelfData({
-      games: games.map((g) => ({ name: g.name, bggId: g.bggId, pitch: g.pitch })),
+      games: games.map((g) => ({ name: g.name, bggId: g.bggId, pitch: g.pitch, thumbnail: g.thumbnail || undefined })),
     });
   }, [games]);
 

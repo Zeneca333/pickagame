@@ -16,12 +16,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title,
-    description: "Check out my board game picks! Get your own at pickagame.fun",
+    description: data
+      ? `${data.games[0]?.name} is my #1 pick! See all 5 and get your own lineup at pickagame.fun`
+      : "Pick your next obsession at pickagame.fun",
     openGraph: {
-      title: "My Board Game Shelf",
+      title: data ? `My Top 5: ${data.games[0]?.name} and more` : "My Board Game Shelf",
       description: data
-        ? data.games.map((g) => g.name).join(" · ")
+        ? `${data.games.map((g) => g.name).join(" · ")} — get your own picks at pickagame.fun`
         : "Pick your next obsession",
+      siteName: "pickagame.fun",
       images: [`/api/og/${encoded}`],
     },
     twitter: {

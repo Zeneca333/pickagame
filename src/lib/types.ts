@@ -64,6 +64,7 @@ export interface ShelfData {
     name: string;
     bggId: number;
     pitch: string;
+    thumbnail?: string;
   }>;
 }
 
