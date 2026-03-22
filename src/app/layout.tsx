@@ -14,6 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pickagame.fun"),
   title: "pickagame.fun — Board Game Matchmaker",
   description:
     "Pick your next obsession. Answer a few questions, get matched with board games you'll actually want to play.",
