@@ -43,7 +43,7 @@ export default function Results({ games, onRollAgain }: ResultsProps) {
       <div className="flex flex-col items-center justify-center min-h-screen px-6">
         <p className="font-mono text-muted text-lg mb-4">No matches found. Try again?</p>
         <button onClick={onRollAgain} className="px-8 py-4 bg-accent text-white font-mono font-bold text-lg rounded-lg">
-          ROLL AGAIN
+          PICK AGAIN
         </button>
       </div>
     );

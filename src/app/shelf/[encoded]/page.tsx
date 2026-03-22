@@ -16,12 +16,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   return {
     title,
-    description: "Check out my board game shelf! Roll for your own at pickagame.fun",
+    description: "Check out my board game picks! Get your own at pickagame.fun",
     openGraph: {
       title: "My Board Game Shelf",
       description: data
         ? data.games.map((g) => g.name).join(" · ")
-        : "Roll for your next obsession",
+        : "Pick your next obsession",
       images: [`/api/og/${encoded}`],
     },
     twitter: {
@@ -40,7 +40,7 @@ export default async function ShelfPage({ params }: PageProps) {
       <div className="flex flex-col items-center justify-center min-h-screen">
         <p className="font-mono text-gray-400">Invalid shelf link.</p>
         <Link href="/" className="mt-4 text-accent font-mono text-sm hover:underline">
-          Roll your own →
+          Pick your own →
         </Link>
       </div>
     );

@@ -46,7 +46,7 @@ export default function ShareButtons({ shelfUrl, ogImageUrl, onRollAgain }: Shar
       </button>
       <button onClick={onRollAgain}
         className="px-6 py-3 border-2 border-ink/10 font-mono text-sm rounded-lg text-muted hover:border-accent hover:text-accent transition-all">
-        ROLL AGAIN
+        PICK AGAIN
       </button>
     </div>
   );

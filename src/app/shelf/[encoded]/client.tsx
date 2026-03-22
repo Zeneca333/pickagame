@@ -46,7 +46,7 @@ export default function ShelfPageClient({ data }: ShelfPageClientProps) {
       )}
 
       <Link href="/" className="px-8 py-4 bg-accent text-white font-mono font-bold text-base rounded-lg hover:brightness-110 transition-all shadow-sm">
-        ROLL YOUR OWN &rarr;
+        PICK YOUR OWN &rarr;
       </Link>
       <p className="font-mono text-sm text-muted mt-8">pickagame.fun</p>
     </div>

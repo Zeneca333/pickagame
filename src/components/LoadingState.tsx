@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const messages = [
-  "Rolling the dice...",
+  "Scanning the shelves...",
   "Consulting the board game gods...",
   "Shuffling through the collection...",
   "Finding your perfect match...",

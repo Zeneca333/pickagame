@@ -9,9 +9,9 @@ export default function Landing({ onStart }: LandingProps) {
         BOARD GAME MATCHMAKER
       </p>
       <h1 className="font-mono text-5xl md:text-6xl font-bold mb-3 leading-tight text-ink">
-        roll for your
+        pick your
         <br />
-        next obsession<span className="text-accent">_</span>
+        next obsession<span className="text-accent animate-blink">_</span>
       </h1>
       <p className="text-muted text-lg max-w-md mb-10">
         answer a few quick questions. get matched with board games you&apos;ll
@@ -21,7 +21,7 @@ export default function Landing({ onStart }: LandingProps) {
         onClick={onStart}
         className="bg-accent text-white font-mono font-bold text-xl px-10 py-4 rounded-lg hover:brightness-110 transition-all shadow-lg shadow-accent/20"
       >
-        ROLL &rarr;
+        PICK &rarr;
       </button>
       <p className="font-mono text-sm text-muted mt-8">
         no sign-up. no bs. just games.
