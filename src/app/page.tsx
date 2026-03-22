@@ -43,6 +43,7 @@ export default function Home() {
         setStep("results");
       } catch (error) {
         console.error(error);
+        alert("Something went wrong — try again!");
         setStep("landing");
       }
     };
