@@ -23,8 +23,7 @@ export async function GET(
     join(process.cwd(), "public/fonts/SpaceMono-Regular.ttf")
   );
 
-  const topPick = data.games[0];
-  const runners = data.games.slice(1, 5);
+  const games = data.games.slice(0, 5);
 
   return new ImageResponse(
     (
@@ -36,33 +35,30 @@ export async function GET(
           flexDirection: "column",
           backgroundColor: "#faf7f2",
           fontFamily: "SpaceMono",
-          padding: 0,
-          position: "relative",
         }}
       >
-        {/* Accent bar at top */}
-        <div style={{ width: "100%", height: 6, backgroundColor: "#e85d3a", display: "flex" }} />
+        {/* Accent bar */}
+        <div style={{ width: "100%", height: 5, backgroundColor: "#e85d3a", display: "flex" }} />
 
-        {/* Header */}
+        {/* Header row */}
         <div style={{
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "20px 40px 12px",
+          padding: "24px 48px 0",
         }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
             {/* Dice icon */}
             <div style={{
-              width: 32,
-              height: 32,
+              width: 36,
+              height: 36,
               backgroundColor: "#e85d3a",
-              borderRadius: 8,
+              borderRadius: 9,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              position: "relative",
             }}>
-              <div style={{ display: "flex", flexWrap: "wrap", width: 18, height: 18, gap: 2 }}>
+              <div style={{ display: "flex", flexWrap: "wrap", width: 20, height: 20, gap: 2 }}>
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
                 <div style={{ width: 5, height: 5, display: "flex" }} />
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
@@ -74,166 +70,95 @@ export async function GET(
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
               </div>
             </div>
-            <span style={{ fontSize: 22, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</span>
+            <span style={{ fontSize: 24, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</span>
           </div>
-          <span style={{ fontSize: 11, letterSpacing: 3, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
+          <span style={{ fontSize: 13, letterSpacing: 4, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
         </div>
 
-        {/* Main content */}
+        {/* Games row — all 5 side by side */}
         <div style={{
           display: "flex",
           flex: 1,
-          padding: "8px 40px 0",
-          gap: 24,
+          padding: "20px 48px 0",
+          gap: 16,
         }}>
-          {/* Left: Top pick with large thumbnail */}
-          {topPick && (
-            <div style={{
+          {games.map((game, i) => (
+            <div key={game.bggId} style={{
               display: "flex",
               flexDirection: "column",
-              width: 420,
-              border: "2px solid rgba(232, 93, 58, 0.25)",
-              borderRadius: 16,
-              backgroundColor: "white",
+              width: 200,
+              backgroundColor: i === 0 ? "white" : "white",
+              border: i === 0 ? "2px solid rgba(232, 93, 58, 0.3)" : "2px solid rgba(45, 42, 38, 0.08)",
+              borderRadius: 14,
               overflow: "hidden",
             }}>
-              <div style={{ display: "flex", gap: 16, padding: 16 }}>
-                {/* Thumbnail */}
-                {topPick.thumbnail ? (
-                  <img
-                    src={topPick.thumbnail}
-                    width={130}
-                    height={130}
-                    style={{
-                      objectFit: "cover",
-                      borderRadius: 12,
-                      flexShrink: 0,
-                    }}
-                  />
-                ) : (
-                  <div style={{
-                    width: 130,
-                    height: 130,
-                    backgroundColor: "#f0ede8",
-                    borderRadius: 12,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    flexShrink: 0,
-                  }}>
-                    <span style={{ fontSize: 40, color: "#8a857d" }}>?</span>
-                  </div>
-                )}
-                {/* Info */}
-                <div style={{
-                  display: "flex",
-                  flexDirection: "column",
-                  flex: 1,
-                  minWidth: 0,
-                }}>
-                  <span style={{
-                    fontSize: 10,
-                    letterSpacing: 3,
-                    color: "#e85d3a",
-                    fontWeight: 700,
-                    marginBottom: 6,
-                  }}>
-                    #1 TOP MATCH
-                  </span>
-                  <span style={{
-                    fontSize: 20,
-                    fontWeight: 700,
-                    color: "#2d2a26",
-                    lineHeight: 1.2,
-                    marginBottom: 8,
-                  }}>
-                    {topPick.name}
-                  </span>
-                  <span style={{
-                    fontSize: 12,
-                    color: "#6b6660",
-                    fontStyle: "italic",
-                    lineHeight: 1.5,
-                    overflow: "hidden",
-                  }}>
-                    &ldquo;{topPick.pitch.length > 100 ? topPick.pitch.slice(0, 97) + "..." : topPick.pitch}&rdquo;
-                  </span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Right: Runners #2-5 as a 2x2 grid */}
-          <div style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: 10,
-            flex: 1,
-          }}>
-            {runners.map((game, i) => (
-              <div key={game.bggId} style={{
-                display: "flex",
-                width: "calc(50% - 5px)",
-                backgroundColor: "white",
-                border: "2px solid rgba(45, 42, 38, 0.08)",
-                borderRadius: 12,
-                overflow: "hidden",
-                gap: 10,
-                padding: 10,
-              }}>
-                {/* Small thumbnail */}
+              {/* Rank badge + thumbnail */}
+              <div style={{ display: "flex", position: "relative" }}>
                 {game.thumbnail ? (
                   <img
                     src={game.thumbnail}
-                    width={70}
-                    height={70}
-                    style={{
-                      objectFit: "cover",
-                      borderRadius: 8,
-                      flexShrink: 0,
-                    }}
+                    width={200}
+                    height={200}
+                    style={{ objectFit: "cover" }}
                   />
                 ) : (
                   <div style={{
-                    width: 70,
-                    height: 70,
+                    width: 200,
+                    height: 200,
                     backgroundColor: "#f0ede8",
-                    borderRadius: 8,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
-                    flexShrink: 0,
                   }}>
-                    <span style={{ fontSize: 24, color: "#8a857d" }}>?</span>
+                    <span style={{ fontSize: 48, color: "#ccc" }}>?</span>
                   </div>
                 )}
+                {/* Rank badge */}
                 <div style={{
+                  position: "absolute",
+                  top: 8,
+                  left: 8,
+                  width: 28,
+                  height: 28,
+                  backgroundColor: i === 0 ? "#e85d3a" : "rgba(45, 42, 38, 0.7)",
+                  color: "white",
+                  borderRadius: 20,
                   display: "flex",
-                  flexDirection: "column",
-                  flex: 1,
-                  minWidth: 0,
+                  alignItems: "center",
                   justifyContent: "center",
+                  fontSize: 13,
+                  fontWeight: 700,
                 }}>
-                  <span style={{
-                    fontSize: 10,
-                    color: "#8a857d",
-                    fontWeight: 700,
-                    marginBottom: 3,
-                  }}>
-                    #{i + 2}
-                  </span>
-                  <span style={{
-                    fontSize: 13,
-                    fontWeight: 700,
-                    color: "#2d2a26",
-                    lineHeight: 1.2,
-                  }}>
-                    {game.name.length > 25 ? game.name.slice(0, 22) + "..." : game.name}
-                  </span>
+                  {i + 1}
                 </div>
               </div>
-            ))}
-          </div>
+              {/* Name + pitch */}
+              <div style={{
+                display: "flex",
+                flexDirection: "column",
+                padding: "10px 12px",
+                flex: 1,
+              }}>
+                <span style={{
+                  fontSize: 13,
+                  fontWeight: 700,
+                  color: "#2d2a26",
+                  lineHeight: 1.2,
+                  marginBottom: 4,
+                }}>
+                  {game.name.length > 22 ? game.name.slice(0, 20) + "..." : game.name}
+                </span>
+                <span style={{
+                  fontSize: 10,
+                  color: "#8a857d",
+                  fontStyle: "italic",
+                  lineHeight: 1.4,
+                }}>
+                  {game.pitch.length > 60 ? game.pitch.slice(0, 57) + "..." : game.pitch}
+                </span>
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Footer */}
@@ -241,12 +166,12 @@ export async function GET(
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "12px 40px 20px",
+          padding: "10px 48px 20px",
         }}>
-          <span style={{ fontSize: 12, color: "#8a857d" }}>
+          <span style={{ fontSize: 13, color: "#8a857d" }}>
             Pick your next obsession
           </span>
-          <span style={{ fontSize: 11, color: "#8a857d" }}>
+          <span style={{ fontSize: 12, color: "#8a857d" }}>
             built by Yoshizen Co
           </span>
         </div>
