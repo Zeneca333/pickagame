@@ -86,7 +86,7 @@ export async function getRecommendations(
   const { systemMessage, userMessage } = buildPrompt(inputs, effectiveGames);
 
   const response = await getClient().chat.completions.create({
-    model: "gemini-3-flash-preview",
+    model: "claude-opus-4-6",
     max_tokens: 3000,
     messages: [
       { role: "system", content: systemMessage },
