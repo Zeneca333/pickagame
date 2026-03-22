@@ -65,6 +65,9 @@ export interface ShelfData {
     bggId: number;
     pitch: string;
     thumbnail?: string;
+    playerCount?: string;
+    playtime?: string;
+    weight?: number;
   }>;
 }
 

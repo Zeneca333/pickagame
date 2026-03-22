@@ -45,20 +45,19 @@ export async function GET(
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "24px 48px 0",
+          padding: "20px 48px 0",
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            {/* Dice icon */}
             <div style={{
-              width: 36,
-              height: 36,
+              width: 32,
+              height: 32,
               backgroundColor: "#e85d3a",
-              borderRadius: 9,
+              borderRadius: 8,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
             }}>
-              <div style={{ display: "flex", flexWrap: "wrap", width: 20, height: 20, gap: 2 }}>
+              <div style={{ display: "flex", flexWrap: "wrap", width: 18, height: 18, gap: 2 }}>
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
                 <div style={{ width: 5, height: 5, display: "flex" }} />
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
@@ -70,47 +69,47 @@ export async function GET(
                 <div style={{ width: 5, height: 5, backgroundColor: "white", borderRadius: 10, display: "flex" }} />
               </div>
             </div>
-            <span style={{ fontSize: 24, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</span>
+            <span style={{ fontSize: 22, fontWeight: 700, color: "#e85d3a" }}>pickagame.fun</span>
           </div>
-          <span style={{ fontSize: 13, letterSpacing: 4, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
+          <span style={{ fontSize: 12, letterSpacing: 4, color: "#8a857d", fontWeight: 700 }}>MY LINEUP</span>
         </div>
 
-        {/* Games row — all 5 side by side */}
+        {/* Games row */}
         <div style={{
           display: "flex",
           flex: 1,
-          padding: "20px 48px 0",
-          gap: 16,
+          padding: "16px 48px 0",
+          gap: 14,
         }}>
           {games.map((game, i) => (
             <div key={game.bggId} style={{
               display: "flex",
               flexDirection: "column",
-              width: 200,
-              backgroundColor: i === 0 ? "white" : "white",
+              width: 204,
+              backgroundColor: "white",
               border: i === 0 ? "2px solid rgba(232, 93, 58, 0.3)" : "2px solid rgba(45, 42, 38, 0.08)",
               borderRadius: 14,
               overflow: "hidden",
             }}>
-              {/* Rank badge + thumbnail */}
+              {/* Thumbnail */}
               <div style={{ display: "flex", position: "relative" }}>
                 {game.thumbnail ? (
                   <img
                     src={game.thumbnail}
-                    width={200}
-                    height={200}
+                    width={204}
+                    height={160}
                     style={{ objectFit: "cover" }}
                   />
                 ) : (
                   <div style={{
-                    width: 200,
-                    height: 200,
+                    width: 204,
+                    height: 160,
                     backgroundColor: "#f0ede8",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                   }}>
-                    <span style={{ fontSize: 48, color: "#ccc" }}>?</span>
+                    <span style={{ fontSize: 40, color: "#ccc" }}>?</span>
                   </div>
                 )}
                 {/* Rank badge */}
@@ -118,43 +117,92 @@ export async function GET(
                   position: "absolute",
                   top: 8,
                   left: 8,
-                  width: 28,
-                  height: 28,
-                  backgroundColor: i === 0 ? "#e85d3a" : "rgba(45, 42, 38, 0.7)",
+                  width: 26,
+                  height: 26,
+                  backgroundColor: i === 0 ? "#e85d3a" : "rgba(45, 42, 38, 0.75)",
                   color: "white",
                   borderRadius: 20,
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
-                  fontSize: 13,
+                  fontSize: 12,
                   fontWeight: 700,
                 }}>
                   {i + 1}
                 </div>
               </div>
-              {/* Name + pitch */}
+
+              {/* Info section */}
               <div style={{
                 display: "flex",
                 flexDirection: "column",
-                padding: "10px 12px",
+                padding: "10px 12px 12px",
                 flex: 1,
               }}>
+                {/* Name */}
                 <span style={{
                   fontSize: 13,
                   fontWeight: 700,
                   color: "#2d2a26",
-                  lineHeight: 1.2,
-                  marginBottom: 4,
+                  lineHeight: 1.25,
+                  marginBottom: 6,
                 }}>
-                  {game.name.length > 22 ? game.name.slice(0, 20) + "..." : game.name}
+                  {game.name}
                 </span>
+
+                {/* Stats row */}
+                <div style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: 6,
+                  marginBottom: 8,
+                }}>
+                  {game.playerCount && (
+                    <span style={{
+                      fontSize: 9,
+                      color: "white",
+                      backgroundColor: "#e85d3a",
+                      padding: "2px 6px",
+                      borderRadius: 4,
+                      fontWeight: 700,
+                    }}>
+                      {game.playerCount}
+                    </span>
+                  )}
+                  {game.playtime && (
+                    <span style={{
+                      fontSize: 9,
+                      color: "#6b6660",
+                      backgroundColor: "#f0ede8",
+                      padding: "2px 6px",
+                      borderRadius: 4,
+                      fontWeight: 700,
+                    }}>
+                      {game.playtime}
+                    </span>
+                  )}
+                  {game.weight && game.weight > 0 && (
+                    <span style={{
+                      fontSize: 9,
+                      color: "#6b6660",
+                      backgroundColor: "#f0ede8",
+                      padding: "2px 6px",
+                      borderRadius: 4,
+                      fontWeight: 700,
+                    }}>
+                      {game.weight}/5
+                    </span>
+                  )}
+                </div>
+
+                {/* Pitch */}
                 <span style={{
                   fontSize: 10,
                   color: "#8a857d",
                   fontStyle: "italic",
                   lineHeight: 1.4,
                 }}>
-                  {game.pitch.length > 60 ? game.pitch.slice(0, 57) + "..." : game.pitch}
+                  {game.pitch}
                 </span>
               </div>
             </div>
@@ -166,13 +214,13 @@ export async function GET(
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          padding: "10px 48px 20px",
+          padding: "10px 48px 18px",
         }}>
-          <span style={{ fontSize: 13, color: "#8a857d" }}>
-            Pick your next obsession
+          <span style={{ fontSize: 13, color: "#e85d3a", fontWeight: 700 }}>
+            pickagame.fun
           </span>
           <span style={{ fontSize: 12, color: "#8a857d" }}>
-            built by Yoshizen Co
+            built by yoshizen.co
           </span>
         </div>
       </div>
